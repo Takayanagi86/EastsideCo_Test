@@ -137,26 +137,41 @@ h1, h2, h3, p {
   height: 27px;
 }
 .hero-right-container .navigation-container .navigation {
-  margin: 0 auto;
+  margin: auto auto;
   color: white;
+  height: 16px;
+  color: rgb(255, 255, 255);
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 0.2px;
 }
-.hero-right-container .navigation-container .navigation :first-of-type {
+.hero-right-container .navigation-container .shop {
+  width: 41px;
   margin-left: 0;
+  margin-right: 80px;
 }
-.hero-right-container .navigation-container .navigation:last-of-type {
-  margin-right: 0;
+.hero-right-container .navigation-container .collections {
+  width: 99px;
+  margin-right: 110px;
 }
-.hero-right-container .navigation-container .menu {
-  height: 18px;
-  width: 35px;
+.hero-right-container .navigation-container .account {
+  width: 70px;
+  margin-right: 75px;
 }
 .hero-right-container .navigation-container .search {
   height: 26px;
   width: 26px;
+  margin-right: 80px;
 }
 .hero-right-container .navigation-container .basket {
   height: 23px;
   width: 16px;
+  margin-right: 73px;
+}
+.hero-right-container .navigation-container .menu {
+  height: 18px;
+  width: 35px;
+  margin-right: 0;
 }
 .hero-right-container .hero-second-image {
   height: 462px;

@@ -61,26 +61,41 @@
     width: 697px;
     height: 27px;
     .navigation{
-      margin: 0 auto;
+      margin: auto auto;
       color: white;
-      & :first-of-type{
-        margin-left: 0;
-      }
-      &:last-of-type{
-        margin-right: 0;
-      }
+      height: 16px;
+      color: rgb(255, 255, 255);
+      font-size: 13px;
+      font-weight: bold;
+      letter-spacing: 0.2px;
     }
-    .menu{
-      height: 18px;
-      width: 35px;
+    .shop{
+      width: 41px;
+      margin-left: 0;
+      margin-right: 80px;
     }
+    .collections{
+      width: 99px;
+      margin-right: 110px;
+    }
+    .account{
+      width: 70px;
+      margin-right: 75px;
+    }  
     .search{
       height: 26px;
       width: 26px;
+      margin-right: 80px;
     }
     .basket{
       height: 23px;
       width: 16px;
+      margin-right: 73px;
+    }
+    .menu{
+      height: 18px;
+      width: 35px;
+      margin-right: 0;
     }
   }  
   .hero-second-image{
