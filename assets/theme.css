@@ -96,6 +96,90 @@ h4 {
   margin: 0 auto;
 }
 
+.card {
+  position: relative;
+  height: 556px;
+  width: 320px;
+  margin-right: 23px;
+}
+.card .rectangle {
+  position: absolute;
+  top: -8px;
+  left: -8px;
+  width: 312px;
+  height: 412px;
+  border: 1px solid rgb(255, 0, 0);
+  border-radius: 0px;
+}
+.card .product-image {
+  position: absolute;
+  z-index: 1;
+  height: 416px;
+  width: 312px;
+}
+.card .card-bottom {
+  position: absolute;
+  bottom: 70px;
+}
+.card .card-bottom h5 {
+  width: 312px;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  font-family: Montserrat-Medium;
+  font-weight: 500;
+  letter-spacing: -0.8px;
+  line-height: 11px;
+  margin: 0;
+}
+.card .card-bottom .paragraph--state-product {
+  width: 647px;
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  font-family: Montserrat-Light;
+  font-weight: 300;
+  letter-spacing: -0.72px;
+  line-height: 30px;
+  margin-top: 5px;
+}
+.card .button {
+  position: absolute;
+  bottom: 0;
+  width: 312px;
+  height: 60px;
+  background: rgb(255, 255, 255);
+  border: none;
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  font-family: Montserrat-Bold;
+  font-weight: bold;
+  letter-spacing: -0.64px;
+  line-height: 11px;
+  text-align: start;
+}
+.card .button .line {
+  display: inline-block;
+  width: 150px;
+  height: 1px;
+  border: 1px solid rgb(151, 151, 151);
+  background-color: rgb(151, 151, 151);
+  margin: 0 9px 4px 13px;
+}
+.card .button:hover {
+  background: rgb(40, 46, 52);
+  text-align: center;
+  color: white;
+}
+.card .button:hover .line {
+  width: 29px;
+  border: 1px solid rgb(255, 255, 255);
+  margin: 0 15px 4px 9px;
+}
+
+.button--state-hover {
+  background: rgb(40, 46, 52);
+  border-radius: 0px;
+}
+
 .hero-container {
   height: 1492px;
   width: 1440px;
@@ -233,9 +317,5 @@ h4 {
 
 .product-cards-container {
   display: flex;
-}
-
-.card {
-  height: 534px;
-  width: 320px;
+  margin-top: 46px;
 }
