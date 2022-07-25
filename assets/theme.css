@@ -46,6 +46,32 @@ h1, h2, h3, p {
   line-height: 38px;
 }
 
+.CTA {
+  position: absolute;
+  width: 386px;
+  height: 92px;
+  background: rgb(255, 255, 255);
+  border-radius: 0px;
+  border-width: 0;
+  font-size: 18px;
+  font-family: Montserrat-Black;
+  font-weight: 900;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: -0.72px;
+}
+
+.CTA--colour-white {
+  bottom: 145px;
+  right: 163px;
+  color: rgb(255, 0, 0);
+}
+
+.CTA--colour-blue {
+  color: rgb(255, 255, 255);
+  background: rgb(122, 227, 244);
+}
+
 .hero-container {
   height: 1492px;
   width: 1440px;
@@ -105,13 +131,32 @@ h1, h2, h3, p {
 .hero-right-container .navigation-container {
   display: flex;
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 65px;
+  right: 60px;
   width: 697px;
   height: 27px;
 }
 .hero-right-container .navigation-container .navigation {
-  justify-content: space-between;
+  margin: 0 auto;
+  color: white;
+}
+.hero-right-container .navigation-container .navigation :first-of-type {
+  margin-left: 0;
+}
+.hero-right-container .navigation-container .navigation:last-of-type {
+  margin-right: 0;
+}
+.hero-right-container .navigation-container .menu {
+  height: 18px;
+  width: 35px;
+}
+.hero-right-container .navigation-container .search {
+  height: 26px;
+  width: 26px;
+}
+.hero-right-container .navigation-container .basket {
+  height: 23px;
+  width: 16px;
 }
 .hero-right-container .hero-second-image {
   height: 462px;

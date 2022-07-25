@@ -56,12 +56,31 @@
   .navigation-container{
     display: flex;
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 65px;
+    right: 60px;
     width: 697px;
     height: 27px;
     .navigation{
-      justify-content: space-between;
+      margin: 0 auto;
+      color: white;
+      & :first-of-type{
+        margin-left: 0;
+      }
+      &:last-of-type{
+        margin-right: 0;
+      }
+    }
+    .menu{
+      height: 18px;
+      width: 35px;
+    }
+    .search{
+      height: 26px;
+      width: 26px;
+    }
+    .basket{
+      height: 23px;
+      width: 16px;
     }
   }  
   .hero-second-image{
