@@ -1,4 +1,15 @@
-
+<div class="IT-container container--state-main">
+    <img class="image-text " src="{{ section.settings.imageText | img_url: '1500x' }}">
+    <div class="right-container">
+        <h1 class="heading heading--colour-black">Lorem ipsum dolor sit</h1>
+        <p class="paragraph paragraph--state-bold">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus aliquam sapien sit amet nibh vestibulum, vel dictum eros imperdiet. Curabitur convallis urna eu.
+        </p>
+        <button class="CTA CTA--colour-blue">
+            Discover the New Collection
+        </button>
+    </div>
+</div>
   
   <style>
   
@@ -12,23 +23,8 @@
       "settings": [
        {
         "type": "image_picker",
-        "id": "cardFirstImage",
-        "label": " first product image"
-      },
-      {
-        "type": "image_picker",
-        "id": "cardSecondImage",
-        "label": "second product image"
-      },
-      {
-        "type": "image_picker",
-        "id": "cardThirdImage",
-        "label": "third product image"
-      },
-      {
-        "type": "image_picker",
-        "id": "cardFourthImage",
-        "label": "fourth product image"
+        "id": "image",
+        "label": "image to go with text"
       }
       ],
       "presets": [
