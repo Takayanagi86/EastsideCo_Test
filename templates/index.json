@@ -11,6 +11,10 @@
     "16587541298b7a58b6": {
       "type": "product-region",
       "settings": {
+        "cardFirstImage": "shopify:\/\/shop_images\/Product_Card_-_1.jpg",
+        "cardSecondImage": "shopify:\/\/shop_images\/Image_1058.jpg",
+        "cardThirdImage": "shopify:\/\/shop_images\/Product_Card_-_1.jpg",
+        "cardFourthImage": "shopify:\/\/shop_images\/Image_1058.jpg"
       }
     }
   },
