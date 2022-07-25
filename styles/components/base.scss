@@ -2,4 +2,39 @@
 	max-width: 1440px;
   margin: 0px auto;
 }
- 
+h1,h2,h3,p {
+  font-family: Montserrat-Black;
+}
+.navigation{
+  font-family: Montserrat-Bold;
+}
+.heading {
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 100px;
+}
+.heading--colour-white{
+  margin: 0;
+  color: rgb(255, 255, 255);
+  font-size: 106px;
+  letter-spacing: -2px;
+}
+.heading--colour-black{
+  margin: 0;
+  color: rgb(255, 255, 255);
+  font-size: 106px;
+  letter-spacing: -2px;
+}
+.paragraph{
+  margin: 0;
+  font-size: 24px;
+}
+.paragraph--state-bold{
+  width: 538px;
+  height: 152px;
+  padding: 171px 0 0 730px;
+  color: rgb(0, 0, 0);
+  font-weight: 900;
+  letter-spacing: -0.96px;
+  line-height: 38px;
+}

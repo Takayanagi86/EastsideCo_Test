@@ -7,75 +7,82 @@
   display: flex;
   height: 1076px;
   width: 1440px;
-  
 }
+
 .hero-left-container{
   height: 100%;
   position: relative;
+  .logo-social-container{
+    position: absolute;
+    top: 55px;
+    left: 75px;
+    width: 31px;
+    .social-container{
+      height: 99px;
+      width: 100%;
+      margin: 35px auto 0 auto;
+      .social--state-menu{
+        width: 20px;
+        height: 19px;
+        margin: 0 auto;
+        &:first-of-type{
+          margin: 0 auto 21px auto;
+        }
+        &:last-of-type{
+          margin: 21px auto 0 auto;
+        }
+      }
+    }
+  }
+  .hero-heading-container{
+    position: absolute;
+    z-index: 1;
+    top: 735px;
+    left: 115px;
+    width: 739px;
+    height: 300px;
+  }
+  .hero-first-image{
+    height: 100%;
+    width: 956px;
+  }
 }
-.logo-social-container{
-  position: absolute;
-  top: 0;
-  left: 75px;
-  width: 24px;
-}
+
 .hero-right-container{
+  position: relative;
   height: 100%;
   width: 100%;
   background-color: #ff0051;
-}
-.hero-heading-container{
-  position: absolute;
-  z-index: 1;
-  top: 735px;
-  left: 115px;
-  width: 739px;
-  height: 300px;
-  & h1{
-    margin: 0;
-    color: rgb(255, 255, 255);
-    font-size: 106px;
-    font-family: Montserrat-Black;
-    font-weight: 900;
-    text-transform: uppercase;
-    letter-spacing: -2px;
-    line-height: 100px;
+  .navigation-container{
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 697px;
+    height: 27px;
+    .navigation{
+      justify-content: space-between;
+    }
+  }  
+  .hero-second-image{
+    height: 462px;
+    width: 370px;
+    margin: 188px 0 0 57px;
+    mix-blend-mode: lighten;
+    opacity: 100%;
   }
-  
 }
- 
-.hero-first-image{
-  height: 100%;
-  width: 956px;
-}
-.hero-second-image{
-  height: 462px;
-  width: 370px;
-  margin: 188px 0 0 57px;
-  mix-blend-mode: lighten;
-  opacity: 100%;
-}
-.hero-third-image{
-  position: absolute;
-  height: 490px;
-  width: 386px;
-  left: 212px;
-  bottom: 0;
-  
-}
+
 .hero-bottom-container{
   position: relative;
   height: 416px;
   width: 1440px;
+  .hero-third-image{
+    position: absolute;
+    height: 490px;
+    width: 386px;
+    left: 212px;
+    bottom: 0;
+  }
 }
-.hero-bold{
-  width: 538px;
-  height: 152px;
-  padding: 171px 0 0 730px;
-  color: rgb(0, 0, 0);
-  font-size: 24px;
-  font-family: Montserrat-Black;
-  font-weight: 900;
-  letter-spacing: -0.96px;
-  line-height: 38px;
-}
+
