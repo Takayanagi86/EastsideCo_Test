@@ -1,0 +1,18 @@
+.IT-container{
+    display: flex;
+    margin-top: 151px;
+    justify-content: space-between;
+    .image-text{
+        height: 671px;
+        width: 558px;
+    }
+    .right-container{
+        width: 647px;
+        .heading{
+            margin-bottom: 35px;
+        }
+        p{
+            margin-bottom: 70px;
+        }
+    }
+}
