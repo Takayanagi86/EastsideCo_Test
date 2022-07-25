@@ -3,8 +3,17 @@
 	max-width: 1440px;
   margin: 0px auto;
 }
-h1,h2,h3,h4,h5,p {
+h1,h2,h3,h5,p {
   font-family: Montserrat-Black;
+}
+h4, .paragraph--state-light{
+  font-family: Montserrat-light;
+}
+h4{
+color: rgb(0, 0, 0);
+font-size: 36px;
+font-weight: 300;
+letter-spacing: -0.68px;
 }
 .navigation{
   font-family: Montserrat-Bold;
@@ -39,6 +48,13 @@ h1,h2,h3,h4,h5,p {
   letter-spacing: -0.96px;
   line-height: 38px;
 }
+.paragraph--state-light{
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: -0.72px;
+  line-height: 30px;
+}
 .CTA{
   position: absolute;
   width: 386px;
@@ -63,4 +79,8 @@ h1,h2,h3,h4,h5,p {
 .CTA--colour-blue{ 
   color: rgb(255, 255, 255);
   background: rgb(122, 227, 244);
+}
+.container--state-main{
+  width: 1325px;
+  margin: 0 auto;
 }
