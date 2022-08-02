@@ -84,10 +84,10 @@
       </div>
     </div>
     <div class="hero-right-container">
-      <div class="navigation-container layout--color-{{ section.settings.top_layout_color }}">
-        <div class="shop navigation">Shop</div>
-        <div class="collections navigation">Collections</div>
-        <div class="account navigation">Account</div>
+      <div class="navigation-container ">
+        <div class="shop navigation layout--color-{{ section.settings.top_layout_color }}">Shop</div>
+        <div class="collections navigation layout--color-{{ section.settings.top_layout_color }}">Collections</div>
+        <div class="account navigation layout--color-{{ section.settings.top_layout_color }}">Account</div>
         <div class="search navigation">
           <?xml version="1.0" encoding="UTF-8"?>
           <svg width="26px" height="26px" viewBox="0 0 26 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -141,7 +141,7 @@
       </div>
       <img class="hero-second-image" src="{{ section.settings.heroSecondImage | img_url: '1500x' }}">
       {% if section.settings.button-checkbox == false %}
-    	<button class="cta cta--colour-white layout--color-{{ section.settings.top_layout_color }}" onclick="location.href='#product-region'" type="button">
+    	<button class="cta cta--colour-white " onclick="location.href='#product-region'" type="button">
           Discover the New Collection
         </button>
       {% endif %}
