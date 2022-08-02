@@ -6,7 +6,7 @@
         "af931567-0982-4b07-95cb-d615867b8c48": {
           "type": "heading",
           "settings": {
-            "logo_social_color": "#b63232"
+            "logo_social_color": "light"
           }
         }
       },
@@ -14,6 +14,7 @@
         "af931567-0982-4b07-95cb-d615867b8c48"
       ],
       "settings": {
+        "liquid-ref": "",
         "heroFirstImage": "shopify:\/\/shop_images\/Large_Image.jpg",
         "heroSecondImage": "shopify:\/\/shop_images\/2nd_Image.png",
         "main_image_alignment": "right",
