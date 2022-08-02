@@ -512,7 +512,7 @@ h3 {
 }
 
 .cta--colour-white {
-  bottom: 145px;
+  top: 838px;
   right: 163px;
   color: rgb(255, 0, 0);
 }
@@ -619,13 +619,13 @@ h3 {
 
 .hero-top-flex {
   display: flex;
+  position: relative;
   height: 1076px;
   width: 1440px;
 }
 
 .hero-left-container {
   height: 100%;
-  position: relative;
 }
 .hero-left-container .logo-social-container {
   position: absolute;
@@ -663,7 +663,6 @@ h3 {
 }
 
 .hero-right-container {
-  position: relative;
   height: 100%;
   width: 100%;
   background-color: #ff0051;

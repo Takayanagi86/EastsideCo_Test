@@ -4,13 +4,13 @@
 }
 .hero-top-flex {
   display: flex;
+  position: relative;
   height: 1076px;
   width: 1440px;
 }
 
 .hero-left-container {
   height: 100%;
-  position: relative;
   .logo-social-container {
     position: absolute;
     top: 55px;
@@ -48,7 +48,6 @@
 }
 
 .hero-right-container {
-  position: relative;
   height: 100%;
   width: 100%;
   background-color: #ff0051;
