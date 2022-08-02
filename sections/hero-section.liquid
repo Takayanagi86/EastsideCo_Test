@@ -140,9 +140,12 @@
         </div>
       </div>
       <img class="hero-second-image" src="{{ section.settings.heroSecondImage | img_url: '1500x' }}">
-      <button class="cta cta--colour-white" onclick="location.href='#product-region'" type="button">
-        Discover the New Collection
-      </button>
+      {% if section.settings.button-checkbox == false %}
+    	<button class="cta cta--colour-white" onclick="location.href='#product-region'" type="button">
+          Discover the New Collection
+        </button>
+      {% endif %}
+      
     </div>
   </div>
   <div class="hero-bottom-container">
