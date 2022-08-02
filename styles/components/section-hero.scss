@@ -42,6 +42,8 @@
     height: 300px;
     &.title--alignment-right {
       right: 163px;
+      left: unset;
+      text-align: end;
     }
   }
   .hero-first-image {

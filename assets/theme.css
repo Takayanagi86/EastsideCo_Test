@@ -659,6 +659,8 @@ h3 {
 }
 .hero-left-container .hero-heading-container.title--alignment-right {
   right: 163px;
+  left: unset;
+  text-align: end;
 }
 .hero-left-container .hero-first-image {
   height: 100%;
