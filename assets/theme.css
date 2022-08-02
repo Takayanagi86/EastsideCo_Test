@@ -657,7 +657,7 @@ h3 {
   width: 739px;
   height: 300px;
 }
-.hero-left-container .hero-heading-container .title--alignment-right {
+.hero-left-container .hero-heading-container.title--alignment-right {
   right: 163px;
 }
 .hero-left-container .hero-first-image {
