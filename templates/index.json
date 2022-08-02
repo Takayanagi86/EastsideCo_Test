@@ -2,6 +2,15 @@
   "sections": {
     "1658407732d50f5484": {
       "type": "hero-section",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Clothes for your best moments",
+            "heading_size": "large"
+          }
+        }
+      },
       "settings": {
         "heroFirstImage": "shopify:\/\/shop_images\/Large_Image.jpg",
         "heroSecondImage": "shopify:\/\/shop_images\/2nd_Image.png",
