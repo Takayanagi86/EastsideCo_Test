@@ -142,11 +142,11 @@
       <img class="hero-second-image" src="{{ section.settings.heroSecondImage | img_url: '1500x' }}">
       {% if section.settings.button-checkbox == false %}
         {% if section.settings.top_layout_color == "dark" %}
-          <button class="cta cta--colour-white " onclick="location.href='#product-region'" type="button" style="background-color: {{ section.settings.image_container_color }}">
+          <button class="cta cta--colour-white " onclick="location.href='#product-region'" type="button" style="background-color: {{ section.settings.image_container_color }}; color: #FFFFFF;">
             Discover the New Collection
           </button>
         {% else %}
-          <button class="cta cta--colour-white " onclick="location.href='#product-region'" type="button" style="color: {{ section.settings.image_container_color }}">
+          <button class="cta cta--colour-white " onclick="location.href='#product-region'" type="button" style="background-color: #FFFFFF; color: {{ section.settings.image_container_color }}">
             Discover the New Collection
           </button>
         {% endif %}
