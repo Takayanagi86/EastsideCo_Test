@@ -3,20 +3,22 @@
     "1658407732d50f5484": {
       "type": "hero-section",
       "blocks": {
-        "heading": {
+        "af931567-0982-4b07-95cb-d615867b8c48": {
           "type": "heading",
           "settings": {
-            "heading": "Clothes for your best moments",
-            "heading_size": "large"
+            "heading": "Image",
+            "logo_social_color": "#FFFFFF"
           }
         }
       },
+      "block_order": [
+        "af931567-0982-4b07-95cb-d615867b8c48"
+      ],
       "settings": {
         "heroFirstImage": "shopify:\/\/shop_images\/Large_Image.jpg",
         "heroSecondImage": "shopify:\/\/shop_images\/2nd_Image.png",
         "main_image_alignment": "right",
         "image_container_color": "#1878b9",
-        "logo_social_color": "#121212",
         "title_alignment": "right",
         "button-checkbox": true,
         "heroThirdImage": "shopify:\/\/shop_images\/shutterstock_403512199.jpg"
