@@ -201,6 +201,22 @@
       "label": "Smaller image container colour",
       "default": "#ff0051"
     },
+       {
+          "type": "select",
+          "id": "logo_social_color",
+          "options": [
+        {
+          "value": "light",
+          "label": "light"
+        },
+        {
+          "value": "dark",
+          "label": "dark"
+        }
+      ],
+        "default": "light",
+        "label": "Logo and Social icons colour scheme"
+        },
     {
       "type": "select",
       "id": "title_alignment",
@@ -233,41 +249,10 @@
       "label": "Bottom image"
     }
     ],
-   "blocks": [
-    {
-      "type": "heading",
-      "name": "helllllooooooooo",
-      "limit": 1,
-      "settings": [
-        
-          {
-          "type": "select",
-          "id": "logo_social_color",
-          "options": [
-        {
-          "value": "light",
-          "label": "light"
-        },
-        {
-          "value": "dark",
-          "label": "dark"
-        }
-      ],
-        "default": "light",
-        "label": "Logo and Social icons colour scheme"
-        }
-      ]
-    }
-    
-   ],
+  
 	"presets": [
 		{
 			"name": "Hero Section",
-          "blocks": [
-          {
-            "type":"heading"
-          }
-        ],
 			"category": "Section"
 		}
 	]
