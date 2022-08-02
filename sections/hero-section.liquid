@@ -80,7 +80,7 @@
         </div>
       </div>
       <div class="hero-heading-container">
-        <h1 class="heading heading--colour-white layout--color-{{ section.settings.top_layout_color }}">Lorem ipsum dolor sit</h1>
+        <h1 class="heading heading--colour-white layout--color-{{ section.settings.top_layout_color }} title--alignment-{{ section.settings.title_alignment }}">Lorem ipsum dolor sit</h1>
       </div>
     </div>
     <div class="hero-right-container" style="background-color: {{ section.settings.image_container_color }}">
@@ -142,11 +142,11 @@
       <img class="hero-second-image" src="{{ section.settings.heroSecondImage | img_url: '1500x' }}">
       {% if section.settings.button-checkbox == false %}
         {% if section.settings.top_layout_color == "dark" %}
-          <button class="cta cta--colour-white " onclick="location.href='#product-region'" type="button" style="background-color: {{ section.settings.image_container_color }}; color: #FFFFFF;">
+          <button class="cta cta--colour-white title--alignment-{{ section.settings.title_alignment }}" onclick="location.href='#product-region'" type="button" style="background-color: {{ section.settings.image_container_color }}; color: #FFFFFF;">
             Discover the New Collection
           </button>
         {% else %}
-          <button class="cta cta--colour-white " onclick="location.href='#product-region'" type="button" style="background-color: #FFFFFF; color: {{ section.settings.image_container_color }}">
+          <button class="cta cta--colour-white title--alignment-{{ section.settings.title_alignment }}" onclick="location.href='#product-region'" type="button" style="background-color: #FFFFFF; color: {{ section.settings.image_container_color }}">
             Discover the New Collection
           </button>
         {% endif %}
