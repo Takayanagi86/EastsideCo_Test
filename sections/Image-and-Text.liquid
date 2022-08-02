@@ -1,22 +1,16 @@
-<div class="IT-container container--state-main">
-    <img class="image-text " src="{{ section.settings.imageText | img_url: '1500x' }}">
+<div class="it-container container--state-main">
+    <img class="image-text " src="{{ section.settings.imageText | img_url: '1500x' }}" loading="lazy">
     <div class="right-container">
-        <h1 class="heading heading--colour-black">Lorem ipsum dolor sit</h1>
+        <h2 class="heading heading--colour-black">Lorem ipsum dolor sit</h2>
         <p class="paragraph paragraph--state-bold">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus aliquam sapien sit amet nibh vestibulum, vel dictum eros imperdiet. Curabitur convallis urna eu.
         </p>
-        <button class="CTA CTA--colour-blue">
+        <button class="cta cta--colour-blue"  onclick="location.href='#product-region'" type="button">
             Discover the New Collection
         </button>
     </div>
 </div>
-  
-  <style>
-  
-  </style>
-  
-  
-  
+   
   {% schema %}
     {
       "name": "Image and Text",

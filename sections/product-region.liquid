@@ -1,52 +1,46 @@
-<div class="product-region container--state-main">
-    <h4>Lorem ipsum dolor sit</h4>
+<div id="product-region" class="product-region container--state-main">
+    <h3>Lorem ipsum dolor sit</h3>
     <p class="paragraph paragraph--state-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus aliquam sapien sit amet nibh vestibulum, vel dictum eros imperdiet.</p>
     <div class="product-cards-container">
         <div class="card card--state-one">
             <span class="rectangle"></span>
-            <img class="product-image product-image-one" src="{{ section.settings.cardFirstImage | img_url: '1500x' }}">
+            <img class="product-image product-image-one" src="{{ section.settings.cardFirstImage | img_url: '1500x' }}" loading="lazy">
             <div class="card-bottom">
-                <h5>Solution</h5>
+                <h4>Solution</h4>
                 <p class="paragraph paragraph--state-product">Exfoliating skin perfector</p>
             </div>
             <button class="button">Add to Bag<span class="line"></span>£15</button>
         </div>
         <div class="card card--state-two">
             <span class="rectangle"></span>
-            <img class="product-image product-image-two" src="{{ section.settings.cardSecondImage | img_url: '1500x' }}">
+            <img class="product-image product-image-two" src="{{ section.settings.cardSecondImage | img_url: '1500x' }}" loading="lazy">
             <div class="card-bottom">
-                <h5>Retinol Youth Renewal Serum</h5>
+                <h4>Retinol Youth Renewal Serum</h4>
                 <p class="paragraph paragraph--state-product">Skin perfector</p>
             </div>
             <button class="button">Add to Bag<span class="line"></span>£23</button>
         </div>
         <div class="card card--state-three">
             <span class="rectangle"></span>
-            <img class="product-image product-image-three" src="{{ section.settings.cardThirdImage | img_url: '1500x' }}">
+            <img class="product-image product-image-three" src="{{ section.settings.cardThirdImage | img_url: '1500x' }}" loading="lazy">
             <div class="card-bottom">
-                <h5>Advanced Blemish</h5>
+                <h4>Advanced Blemish</h4>
                 <p class="paragraph paragraph--state-product">Exfoliating skin perfector plus</p>
             </div> 
             <button class="button">Add to Bag<span class="line"></span>£7</button> 
         </div>
         <div class="card card--state-four">
             <span class="rectangle"></span>
-            <img class="product-image product-image-four" src="{{ section.settings.cardFourthImage | img_url: '1500x' }}">
+            <img class="product-image product-image-four" src="{{ section.settings.cardFourthImage | img_url: '1500x' }}" loading="lazy">
             <div class="card-bottom">
-                <h5>The Lip Balm</h5>
+                <h4>The Lip Balm</h4>
                 <p class="paragraph paragraph--state-product">Only lipstick you’ll ever need</p>
             </div> 
             <button class="button">Add to Bag<span class="line"></span>£18</button>
         </div>
     </div>
 </div>
-  
-  <style>
-  
-  </style>
-  
-  
-  
+   
   {% schema %}
     {
       "name": "Product Region",

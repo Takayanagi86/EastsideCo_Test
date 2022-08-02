@@ -1,40 +1,39 @@
-
-.hero-container{
+.hero-container {
   height: 1492px;
   width: 1440px;
 }
-.hero-top-flex{
+.hero-top-flex {
   display: flex;
   height: 1076px;
   width: 1440px;
 }
 
-.hero-left-container{
+.hero-left-container {
   height: 100%;
   position: relative;
-  .logo-social-container{
+  .logo-social-container {
     position: absolute;
     top: 55px;
     left: 75px;
     width: 31px;
-    .social-container{
+    .social-container {
       height: 99px;
       width: 100%;
       margin: 35px auto 0 auto;
-      .social--state-menu{
+      .social--state-menu {
         width: 20px;
         height: 19px;
         margin: 0 auto;
-        &:first-of-type{
+        &:first-of-type {
           margin: 0 auto 21px auto;
         }
-        &:last-of-type{
+        &:last-of-type {
           margin: 21px auto 0 auto;
         }
       }
     }
   }
-  .hero-heading-container{
+  .hero-heading-container {
     position: absolute;
     z-index: 1;
     top: 735px;
@@ -42,25 +41,25 @@
     width: 739px;
     height: 300px;
   }
-  .hero-first-image{
+  .hero-first-image {
     height: 100%;
     width: 956px;
   }
 }
 
-.hero-right-container{
+.hero-right-container {
   position: relative;
   height: 100%;
   width: 100%;
   background-color: #ff0051;
-  .navigation-container{
+  .navigation-container {
     display: flex;
     position: absolute;
     top: 65px;
     right: 60px;
     width: 697px;
     height: 27px;
-    .navigation{
+    .navigation {
       margin: auto auto;
       color: white;
       height: 16px;
@@ -69,36 +68,36 @@
       font-weight: bold;
       letter-spacing: 0.2px;
     }
-    .shop{
+    .shop {
       width: 41px;
       margin-left: 0;
       margin-right: 80px;
     }
-    .collections{
+    .collections {
       width: 99px;
       margin-right: 110px;
     }
-    .account{
+    .account {
       width: 70px;
       margin-right: 75px;
     }  
-    .search{
+    .search {
       height: 26px;
       width: 26px;
       margin-right: 80px;
     }
-    .basket{
+    .basket {
       height: 23px;
       width: 16px;
       margin-right: 73px;
     }
-    .menu{
+    .menu {
       height: 18px;
       width: 35px;
       margin-right: 0;
     }
   }  
-  .hero-second-image{
+  .hero-second-image {
     height: 462px;
     width: 370px;
     margin: 188px 0 0 57px;
@@ -107,18 +106,18 @@
   }
 }
 
-.hero-bottom-container{
+.hero-bottom-container {
   position: relative;
   height: 416px;
   width: 1440px;
-  .hero-third-image{
+  .hero-third-image {
     position: absolute;
     height: 490px;
     width: 386px;
     left: 212px;
     bottom: 0;
   }
-  .paragraph--state-bold{
+  .paragraph--state-bold {
     padding: 171px 0 0 730px;
   }
 }

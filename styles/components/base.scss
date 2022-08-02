@@ -1,21 +1,27 @@
-
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  position: relative;
+}
 #MainContent {
 	max-width: 1440px;
   margin: 0px auto;
 }
-h1,h2,h3,h5,p {
+h1,h2,h4,h5,p {
   font-family: Montserrat-Black;
 }
-h4, .paragraph--state-light{
+h3, .paragraph--state-light {
   font-family: Montserrat-light;
 }
-h4{
+h3 {
 color: rgb(0, 0, 0);
 font-size: 36px;
 font-weight: 300;
 letter-spacing: -0.68px;
 }
-.navigation{
+.navigation {
   font-family: Montserrat-Bold;
 }
 .heading {
@@ -23,23 +29,23 @@ letter-spacing: -0.68px;
   text-transform: uppercase;
   line-height: 100px;
 }
-.heading--colour-white{
+.heading--colour-white {
   margin: 0;
   color: rgb(255, 255, 255);
   font-size: 106px;
   letter-spacing: -2px;
 }
-.heading--colour-black{
+.heading--colour-black {
   margin: 0;
   color: rgb(40, 46, 52);
   font-size: 106px;
   letter-spacing: -2px;
 }
-.paragraph{
+.paragraph {
   margin: 0;
   font-size: 24px;
 }
-.paragraph--state-bold{
+.paragraph--state-bold {
   width: 538px;
   height: 152px;
   color: rgb(0, 0, 0);
@@ -47,14 +53,14 @@ letter-spacing: -0.68px;
   letter-spacing: -0.96px;
   line-height: 38px;
 }
-.paragraph--state-light{
+.paragraph--state-light {
   color: rgb(0, 0, 0);
   font-size: 18px;
   font-weight: 300;
   letter-spacing: -0.72px;
   line-height: 30px;
 }
-.CTA{
+.cta {
   position: absolute;
   width: 386px;
   height: 92px;
@@ -68,27 +74,30 @@ letter-spacing: -0.68px;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: -0.72px;
+  &:hover {
+    cursor: pointer;
+  }
 }
-.CTA--colour-white{
+.cta--colour-white {
   bottom: 145px;
   right: 163px;
   color: rgb(255, 0, 0);
 
 }
-.CTA--colour-blue{ 
+.cta--colour-blue { 
   color: rgb(255, 255, 255);
   background: rgb(122, 227, 244);
 }
-.container--state-main{
+.container--state-main {
   width: 1325px;
   margin: 0 auto;
 }
-.card{
+.card {
   position: relative;
   height: 556px;
   width: 320px;
   margin-right: 23px;
-  .rectangle{
+  .rectangle {
       position: absolute;
       top: -8px;
       left: -8px;
@@ -97,16 +106,16 @@ letter-spacing: -0.68px;
       border: 1px solid rgb(255, 0, 0);
       border-radius: 0px;
   }
-  .product-image{
+  .product-image {
       position: absolute;
       z-index:1;
       height: 416px;
       width: 312px;
   }
-  .card-bottom{
+  .card-bottom {
       position: absolute;
       bottom: 70px;
-      h5{
+      h4 {
           width: 312px;
           color: rgb(0, 0, 0);
           font-size: 20px;
@@ -116,7 +125,7 @@ letter-spacing: -0.68px;
           line-height: 11px;
           margin: 0;
       }
-      .paragraph--state-product{
+      .paragraph--state-product {
           width: 647px;
           color: rgb(0, 0, 0);
           font-size: 18px;
@@ -127,7 +136,7 @@ letter-spacing: -0.68px;
           margin-top: 5px;
       }
   }
-  .button{
+  .button {
       position: absolute;
       bottom: 0;
       width: 312px;
@@ -141,19 +150,20 @@ letter-spacing: -0.68px;
       letter-spacing: -0.64px;
       line-height: 11px;
       text-align: start;
-      .line{
+      .line {
           display: inline-block;
           width: 150px;
           height: 1px;
           border: 1px solid rgb(151, 151, 151);
           background-color: rgb(151, 151, 151) ;
           margin: 0 9px 4px 13px;
+          transition: width 0.5s
       }
-      &:hover{
+      &:hover {
         background: rgb(40, 46, 52);
         text-align: center;
         color: white;
-        .line{
+        .line {
           width: 29px;
           border: 1px solid rgb(255, 255, 255);
           margin: 0 15px 4px 9px;
@@ -163,7 +173,7 @@ letter-spacing: -0.68px;
 }
 
 
-.button--state-hover{
+.button--state-hover {
   background: rgb(40, 46, 52);
   border-radius: 0px;
 }
