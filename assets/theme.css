@@ -629,6 +629,7 @@ h3 {
 }
 .hero-left-container .logo-social-container {
   position: absolute;
+  z-index: 5;
   top: 55px;
   left: 75px;
   width: 31px;
