@@ -40,6 +40,9 @@
     left: 115px;
     width: 739px;
     height: 300px;
+    &.title--alignment-right {
+      right: 163px;
+    }
   }
   .hero-first-image {
     height: 100%;
@@ -101,6 +104,9 @@
     mix-blend-mode: lighten;
     opacity: 100%;
   }
+  &.title--alignment-right {
+    left: 115px;
+  }
 }
 
 .hero-bottom-container {
@@ -123,7 +129,14 @@
   fill: #FFFFFF;
   color: #FFFFFF;
 }
+
 .layout--color-dark {
   fill: #000;
   color: #000;
 }
+
+.content--alignment-right {
+  flex-direction: row-reverse;
+}
+
+

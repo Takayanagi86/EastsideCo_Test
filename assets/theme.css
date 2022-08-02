@@ -657,6 +657,9 @@ h3 {
   width: 739px;
   height: 300px;
 }
+.hero-left-container .hero-heading-container.title--alignment-right {
+  right: 163px;
+}
 .hero-left-container .hero-first-image {
   height: 100%;
   width: 956px;
@@ -717,6 +720,9 @@ h3 {
   mix-blend-mode: lighten;
   opacity: 100%;
 }
+.hero-right-container.title--alignment-right {
+  left: 115px;
+}
 
 .hero-bottom-container {
   position: relative;
@@ -742,6 +748,10 @@ h3 {
 .layout--color-dark {
   fill: #000;
   color: #000;
+}
+
+.content--alignment-right {
+  flex-direction: row-reverse;
 }
 
 .product-region {
