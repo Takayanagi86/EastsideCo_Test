@@ -19,7 +19,7 @@
         "main_image_alignment": "right",
         "image_container_color": "#1878b9",
         "title_alignment": "right",
-        "button-checkbox": true,
+        "button-checkbox": false,
         "heroThirdImage": "shopify:\/\/shop_images\/shutterstock_403512199.jpg"
       }
     },
