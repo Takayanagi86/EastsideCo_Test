@@ -736,6 +736,16 @@ h3 {
   padding: 171px 0 0 730px;
 }
 
+.layout-color-light {
+  fill: #FFFFFF;
+  color: #FFFFFF;
+}
+
+.layout-color-dark {
+  fill: #000;
+  color: #000;
+}
+
 .product-region {
   height: 726px;
 }
