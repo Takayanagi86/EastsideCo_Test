@@ -239,11 +239,22 @@
       "name": "helllllooooooooo",
       "limit": 1,
       "settings": [
-        {
-          "type": "color",
+        
+          {
+          "type": "select",
           "id": "logo_social_color",
-          "label": "The logo and social icons colour",
-          "default": "#FFFFFF"
+          "options": [
+        {
+          "value": "light",
+          "label": "light"
+        },
+        {
+          "value": "dark",
+          "label": "dark"
+        }
+      ],
+        "default": "light",
+        "label": "Logo and Social icons colour scheme"
         }
       ]
     }
