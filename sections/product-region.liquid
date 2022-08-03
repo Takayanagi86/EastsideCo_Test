@@ -2,7 +2,8 @@
     <h3>Lorem ipsum dolor sit</h3>
     <p class="paragraph paragraph--state-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus aliquam sapien sit amet nibh vestibulum, vel dictum eros imperdiet.</p>
     <ul class="product-cards-container">
-      {% for product in section.settings.collection.products %}
+      {% assign products_by_created = section.settings.collection.products | sort: "created_at" %}
+      {% for product in products_by_created %}
         <li class="card card--state-one">
             <span class="rectangle"></span>
             <img class="product-image product-image-one" src="{{ product.featured_image | img_url: '1500x' }}" loading="lazy">
