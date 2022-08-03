@@ -783,6 +783,9 @@ h3 {
   margin-top: 151px;
   justify-content: space-between;
 }
+.it-container.image-text--alignment-right {
+  flex-direction: row-reverse;
+}
 .it-container .image-text {
   height: 671px;
   width: 558px;
