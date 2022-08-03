@@ -8,7 +8,7 @@ sliderTypeCount = '.slider-type-'+sliderCount;
 
     $(document).ready(function(){
       $('.autoplay').slick({
-        slidesToShow: slidesToShow,
+        slidesToShow: 3,
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 2000,
