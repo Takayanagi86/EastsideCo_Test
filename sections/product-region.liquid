@@ -15,6 +15,11 @@
         </div>
       {% endfor %}
     </div>
+    <div class="autoplay">
+      {% for product in products_by_created %}
+            <img class="product-image product-image-one" src="{{ product.featured_image | img_url: '1500x' }}" loading="lazy">     
+      {% endfor %}
+    </div>
 </div>
    
   {% schema %}
