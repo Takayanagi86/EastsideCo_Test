@@ -1,11 +1,11 @@
 <div id="product-region" class="product-region container--state-main">
-    <h3>{{ section.settings.product_heading }}</h3>
-    <p class="paragraph paragraph--state-light">{{ section.settings.product_statement }}</p>
+    <h3 style="color: {{ section.settings.product_font_color }}">{{ section.settings.product_heading }}</h3>
+    <p class="paragraph paragraph--state-light" style="color: {{ section.settings.product_font_color }}">{{ section.settings.product_statement }}</p>
     <div class="product-cards-container autoplay">
       {% assign products_by_created = section.settings.collection.products | sort: "created_at" %}
       {% for product in products_by_created %}
         <div class="card card--state-one">
-            <span class="rectangle"></span>
+            <span class="rectangle" style="border-color: {{ section.settings.rectangle_color }}"></span>
             <img class="product-image product-image-one" src="{{ product.featured_image | img_url: '1500x' }}" loading="lazy">
             <div class="card-bottom">
                 <h4>{{ product.title }}</h4>
@@ -38,6 +38,18 @@
           "id": "collection",
           "label": "Collection Selection",
           "info": "For this slider to work, at least 5 items need to be in the selected collection"
+        },
+        {
+          "type": "color",
+          "id": "product_font_color",
+          "label": "Font colour for product section ",
+          "default": "#000000"
+        },
+        {
+          "type": "color",
+          "id": "rectangle_color",
+          "label": "Colour of the rectangle",
+          "default": "#FF0000"
         }
       ],
       "presets": [
