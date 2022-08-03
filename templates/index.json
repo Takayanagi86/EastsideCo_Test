@@ -57,17 +57,36 @@
     "16587541298b7a58b6": {
       "type": "product-region",
       "settings": {
+        "product_heading": "Lorem ipsum dolor sit",
+        "product_statement": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus aliquam sapien sit amet nibh vestibulum, vel dictum eros imperdiet.",
         "collection": "frontpage",
-        "cardFirstImage": "shopify:\/\/shop_images\/Product_Card_-_1.jpg",
-        "cardSecondImage": "shopify:\/\/shop_images\/Image_1058.jpg",
-        "cardThirdImage": "shopify:\/\/shop_images\/Product_Card_-_1.jpg",
-        "cardFourthImage": "shopify:\/\/shop_images\/Image_1058.jpg"
+        "product_font_color": "#000000",
+        "rectangle_color": "#FF0000"
       }
     },
     "165876115757d19830": {
       "type": "Image-and-Text",
+      "blocks": {
+        "b487674a-97c1-486c-91fc-3c1ad0503985": {
+          "type": "right",
+          "settings": {
+            "image_text_heading": "Lorem ipsum dolor sit",
+            "heading_font_color": "#000000",
+            "image_text_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus aliquam sapien sit amet nibh vestibulum, vel dictum eros imperdiet. Curabitur convallis urna eu.",
+            "text_font_color": "#000000",
+            "cta_text": "Discover the new collection",
+            "cta_bg_color": "#7AE3F4",
+            "cta_font_color": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "b487674a-97c1-486c-91fc-3c1ad0503985"
+      ],
       "settings": {
-        "imageText": "shopify:\/\/shop_images\/shutterstock_768153187.jpg"
+        "imageText": "shopify:\/\/shop_images\/shutterstock_768153187.jpg",
+        "image_alignment": "left",
+        "image_text_bg_colour": "#ffffff"
       }
     }
   },
