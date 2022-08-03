@@ -688,6 +688,9 @@ h3 {
   font-weight: bold;
   letter-spacing: 0.2px;
 }
+.hero-right-container .navigation-container .navigation:hover {
+  cursor: pointer;
+}
 .hero-right-container .navigation-container .shop {
   width: 41px;
   margin-left: 0;
