@@ -28,13 +28,7 @@
         {% for block in section.blocks %}
   {% case block.type %}
     {% when 'social' %}
-      <div class="social" {{ block.shopify_attributes }}>
-        {{ block.settings.instagram_link }}
-      </div>
-    ...
-  {% endcase %}
-{% endfor %}
-        <div class="social-container" {{ block.shopify_attributes }}>
+     <div class="social-container" {{ block.shopify_attributes }}>
           <div class="social social--state-menu">
             <a class="instagram" href="{{ block.settings.instagram_link }} {{ section.settings.instagram_link }}">
               <?xml version="1.0" encoding="UTF-8"?>
@@ -88,6 +82,9 @@
             </a>
           </div>
         </div>
+  {% endcase %}
+{% endfor %}
+        
       </div>
       <div class="hero-heading-container  title--alignment-{{ section.settings.title_alignment }}">
         <h1 class="heading heading--colour-white layout--color-{{ section.settings.top_layout_color }}">Lorem ipsum dolor sit</h1>
