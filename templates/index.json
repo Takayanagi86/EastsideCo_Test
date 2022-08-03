@@ -2,6 +2,20 @@
   "sections": {
     "1658407732d50f5484": {
       "type": "hero-section",
+      "blocks": {
+        "1abe1020-92e5-4998-a597-9c987f023e4f": {
+          "type": "social",
+          "settings": {
+            "instagram_link": "https:\/\/www.instagram.com",
+            "snapchat_link": "https:\/\/www.snapchat.com",
+            "twitter_link": "https:\/\/www.twitter.com",
+            "button_style_secondary_1": false
+          }
+        }
+      },
+      "block_order": [
+        "1abe1020-92e5-4998-a597-9c987f023e4f"
+      ],
       "settings": {
         "heroFirstImage": "shopify:\/\/shop_images\/Large_Image.jpg",
         "heroSecondImage": "shopify:\/\/shop_images\/2nd_Image.png",
