@@ -3,7 +3,7 @@
     
       {% for block in section.blocks %}
         {%- case block.type -%}
-          {%- when 'heading' -%}
+          {%- when 'heading2' -%}
           <div class="right-container"{{ block.shopify_attributes }}>
           <h2 class="heading heading--colour-black" >{{ block.settings.image_text_heading }}</h2>
           <p class="paragraph paragraph--state-bold">
@@ -58,7 +58,7 @@
       ],
       "blocks":[
       {
-        "type": "heading",
+        "type": "heading2",
         "name": "Heading and Text",
         "limit": 1,
         "settings":[
