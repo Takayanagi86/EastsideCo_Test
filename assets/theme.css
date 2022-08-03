@@ -771,6 +771,7 @@ h3 {
 .product-cards-container {
   display: flex;
   margin-top: 46px;
+  overflow: hidden;
 }
 
 .slick-track {
