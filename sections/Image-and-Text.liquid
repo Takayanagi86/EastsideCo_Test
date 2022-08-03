@@ -3,7 +3,9 @@
     <div class="right-container">
       {% for block in section.blocks %}
         {%- case block.type -%}
+          {%- when 'heading' -%}
           <h2 class="heading heading--colour-black">Lorem ipsum dolor sit</h2>
+          {%- when 'text' -%}
           <p class="paragraph paragraph--state-bold">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus aliquam sapien sit amet nibh vestibulum, vel dictum eros imperdiet. Curabitur convallis urna eu.
           </p>
