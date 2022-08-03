@@ -4,8 +4,7 @@
     <div class="hero-left-container">
       <img class="hero-first-image" src="{{ section.settings.heroFirstImage | img_url: '1500x' }}">
       {% for block in section.blocks %}
-        {% case block.type %}
-          {% when 'social' %}
+        
           <div class="logo-social-container" {{ block.shopify_attributes }}>
         <svg width="31px" height="273px" viewBox="0 0 31 273" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <g id="Developer---Concept-Mockup" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -81,7 +80,7 @@
             </a>
           </div>
         </div> 
-        {% endcase %}
+       
       {% endfor %}
       
       </div>
