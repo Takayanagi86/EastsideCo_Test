@@ -154,25 +154,11 @@
       {% for block in section.blocks %}
         {%- case block.type -%}
           {%- when 'cta' -%}
-            <button class="cta cta--colour-white title--alignment-{{ section.settings.title_alignment }}" onclick="location.href='#product-region'" type="button" style="background-color: {{ section.settings.image_container_color }}; color: #FFFFFF;">
+            <button class="cta cta--colour-white title--alignment-{{ section.settings.title_alignment }}" onclick="location.href='#product-region'" type="button" style="background-color: {{ block.settings.cta_bg_color }}; color: {{ block.settings.cta_font_color }};">
               Discover the New Collection
             </button>   
         {% endcase %}
-      {% endfor %}
-
-      
-      {% if section.settings.button-checkbox == false %}
-        {% if section.settings.top_layout_color == "dark" %}
-          <button class="cta cta--colour-white title--alignment-{{ section.settings.title_alignment }}" onclick="location.href='#product-region'" type="button" style="background-color: {{ section.settings.image_container_color }}; color: #FFFFFF;">
-            Discover the New Collection
-          </button>
-        {% else %}
-          <button class="cta cta--colour-white title--alignment-{{ section.settings.title_alignment }}" onclick="location.href='#product-region'" type="button" style="background-color: #FFFFFF; color: {{ section.settings.image_container_color }}">
-            Discover the New Collection
-          </button>
-        {% endif %}
-      {% endif %}
-      
+      {% endfor %}  
     </div>
   </div>
   <div class="hero-bottom-container">
