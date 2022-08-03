@@ -93,9 +93,9 @@
         {%- case block.type -%}
           {%- when 'navigation' -%}
             <div class="navigation-container" {{ block.shopify_attributes }}>
-              <div class="shop navigation" style="color: {{ block.settings.navigation_color }}"><a href="{{ block.settings.shop_link }}">Shop</a></div>
-              <div class="collections navigation" style="color: {{ block.settings.navigation_color }}"><a href="{{ block.settings.collection_link }}">Collections</a></div>
-              <div class="account navigation" style="color: {{ block.settings.navigation_color }}"><a href="{{ block.settings.account_link }}">Account</a></div>
+              <div class="shop navigation"><a href="{{ block.settings.shop_link }}" style="color: {{ block.settings.navigation_color }} !important">Shop</a></div>
+              <div class="collections navigation"><a href="{{ block.settings.collection_link }}" style="color: {{ block.settings.navigation_color }} !important">collections</a></div>
+              <div class="account navigation"><a href="{{ block.settings.account_link }}" style="color: {{ block.settings.navigation_color }} !important">Account</a></div>
               <div class="search navigation">
                 <?xml version="1.0" encoding="UTF-8"?>
                 <svg width="26px" height="26px" viewBox="0 0 26 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">

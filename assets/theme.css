@@ -691,6 +691,9 @@ h3 {
 .hero-right-container .navigation-container .navigation:hover {
   cursor: pointer;
 }
+.hero-right-container .navigation-container .navigation a {
+  text-decoration: none;
+}
 .hero-right-container .navigation-container .shop {
   width: 41px;
   margin-left: 0;
