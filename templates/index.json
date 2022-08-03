@@ -24,7 +24,11 @@
         "top_layout_color": "light",
         "title_alignment": "left",
         "button-checkbox": false,
-        "heroThirdImage": "shopify:\/\/shop_images\/shutterstock_403512199.jpg"
+        "heroThirdImage": "shopify:\/\/shop_images\/shutterstock_403512199.jpg",
+        "instagram_link": "shopify:\/\/collections",
+        "snapchat_link": "shopify:\/\/pages\/contact",
+        "twitter_link": "shopify:\/\/collections\/all",
+        "button_style_secondary_1": false
       }
     },
     "16587541298b7a58b6": {
