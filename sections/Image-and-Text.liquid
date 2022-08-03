@@ -1,6 +1,10 @@
 <div class="it-container container--state-main image-text--alignment-{{ section.settings.image_alignment }}" style="background-color: {{ section.settings.image_text_bg_colour }}">
     <img class="image-text " src="{{ section.settings.imageText | img_url: '1500x' }}" loading="lazy">
-     <div class="right-container"{{ block.shopify_attributes }}>
+    
+      {% for block in section.blocks %}
+        {%- case block.type -%}
+          {%- when 'right' -%}
+          <div class="right-container"{{ block.shopify_attributes }}>
           <h2 class="heading heading--colour-black" >{{ block.settings.image_text_heading }}</h2>
           <p class="paragraph paragraph--state-bold">
               {{ block.settings.image_text_text }}
@@ -8,10 +12,6 @@
             <button class="cta cta--colour-blue"  onclick="location.href='#product-region'" type="button" {{ block.shopify_attributes }} >
               {{ block.settings.cta_text }}
             </button>
-      {% for block in section.blocks %}
-        {%- case block.type -%}
-          {%- when 'right' -%}
-         
         {% endcase %}
       {% endfor %} 
       
