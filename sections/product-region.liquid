@@ -1,5 +1,5 @@
 <div id="product-region" class="product-region container--state-main">
-    <h3>{{ section.settings.product_title }}</h3>
+    <h3>{{ section.settings.product_heading }}</h3>
     <p class="paragraph paragraph--state-light">{{ section.settings.product_statement }}</p>
     <div class="product-cards-container autoplay">
       {% assign products_by_created = section.settings.collection.products | sort: "created_at" %}
@@ -23,8 +23,8 @@
       "settings": [
         {
           "type": "text",
-          "id": "product_title",
-          "label": "Product Title",
+          "id": "product_heading",
+          "label": "Product Heading",
           "default": "Lorem ipsum dolor sit"
         },
         {
