@@ -9,12 +9,22 @@
             "instagram_link": "https:\/\/www.instagram.com",
             "snapchat_link": "https:\/\/www.snapchat.com",
             "twitter_link": "https:\/\/www.twitter.com",
-            "button_style_secondary_1": false
+            "logo_social_color": "#ffffff"
+          }
+        },
+        "4282f382-0209-43c9-9b06-f4a96c8b99f3": {
+          "type": "navigation",
+          "settings": {
+            "shop_link": "",
+            "collections_link": "",
+            "account_link": "",
+            "navigation_color": "#ffffff"
           }
         }
       },
       "block_order": [
-        "1abe1020-92e5-4998-a597-9c987f023e4f"
+        "1abe1020-92e5-4998-a597-9c987f023e4f",
+        "4282f382-0209-43c9-9b06-f4a96c8b99f3"
       ],
       "settings": {
         "heroFirstImage": "shopify:\/\/shop_images\/Large_Image.jpg",
@@ -24,11 +34,7 @@
         "top_layout_color": "light",
         "title_alignment": "left",
         "button-checkbox": false,
-        "heroThirdImage": "shopify:\/\/shop_images\/shutterstock_403512199.jpg",
-        "instagram_link": "shopify:\/\/collections",
-        "snapchat_link": "shopify:\/\/pages\/contact",
-        "twitter_link": "shopify:\/\/collections\/all",
-        "button_style_secondary_1": false
+        "heroThirdImage": "shopify:\/\/shop_images\/shutterstock_403512199.jpg"
       }
     },
     "16587541298b7a58b6": {
