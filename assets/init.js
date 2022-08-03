@@ -1,8 +1,3 @@
-document.querySelector('.slider-type').classList.add('slider-type-'+sliderCount);
-document.querySelector('.slider-type-'+sliderCount).classList.remove('slider-type');
-
-sliderTypeCount = '.slider-type-'+sliderCount;
-
 
 
 
@@ -16,5 +11,3 @@ sliderTypeCount = '.slider-type-'+sliderCount;
   	});
 
 
-
-sliderCount += 1
