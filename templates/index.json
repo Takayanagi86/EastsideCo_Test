@@ -24,15 +24,24 @@
         "6a10934c-d7fa-40b8-9627-62bfe723195d": {
           "type": "cta",
           "settings": {
+            "cta_text": "Discover the new collection",
             "cta_bg_color": "#ffffff",
             "cta_font_color": "#ff0051"
+          }
+        },
+        "161001a3-9c59-4394-bfd4-e6cd3443ae7d": {
+          "type": "bottom",
+          "settings": {
+            "image_alignment": "right",
+            "bot_font_color": "#000000"
           }
         }
       },
       "block_order": [
         "1abe1020-92e5-4998-a597-9c987f023e4f",
         "4282f382-0209-43c9-9b06-f4a96c8b99f3",
-        "6a10934c-d7fa-40b8-9627-62bfe723195d"
+        "6a10934c-d7fa-40b8-9627-62bfe723195d",
+        "161001a3-9c59-4394-bfd4-e6cd3443ae7d"
       ],
       "settings": {
         "heroFirstImage": "shopify:\/\/shop_images\/Large_Image.jpg",
@@ -41,7 +50,6 @@
         "image_container_color": "#ff0051",
         "title_alignment": "left",
         "title_color": "#ffffff",
-        "button-checkbox": false,
         "heroThirdImage": "shopify:\/\/shop_images\/shutterstock_403512199.jpg"
       }
     },
