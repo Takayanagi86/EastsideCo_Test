@@ -1,6 +1,6 @@
 <div id="product-region" class="product-region container--state-main">
-    <h3>Lorem ipsum dolor sit</h3>
-    <p class="paragraph paragraph--state-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus aliquam sapien sit amet nibh vestibulum, vel dictum eros imperdiet.</p>
+    <h3>{{ section.settings.product_title }}</h3>
+    <p class="paragraph paragraph--state-light">{{ section.settings.product_statement }}</p>
     <div class="product-cards-container autoplay">
       {% assign products_by_created = section.settings.collection.products | sort: "created_at" %}
       {% for product in products_by_created %}
@@ -21,6 +21,18 @@
     {
       "name": "Product Region",
       "settings": [
+        {
+          "type": "text",
+          "id": "product_title",
+          "label": "Product Title",
+          "default": "Lorem ipsum dolor sit"
+        },
+        {
+          "type": "textarea",
+          "id": "product_statement",
+          "label": "Product statement",
+          "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus aliquam sapien sit amet nibh vestibulum, vel dictum eros imperdiet."
+        },
         {
           "type": "collection",
           "id": "collection",
