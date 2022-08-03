@@ -5,11 +5,11 @@
         {%- case block.type -%}
           {%- when 'right' -%}
           <div class="right-container"{{ block.shopify_attributes }}>
-          <h2 class="heading heading--colour-black" >{{ block.settings.image_text_heading }}</h2>
-          <p class="paragraph paragraph--state-bold">
+          <h2 class="heading heading--colour-black" style="color: {{ block.settings.heading_font_color }}">{{ block.settings.image_text_heading }}</h2>
+          <p class="paragraph paragraph--state-bold" style="color: {{ block.settings.text_font_color }}">
               {{ block.settings.image_text_text }}
           </p>
-            <button class="cta cta--colour-blue"  onclick="location.href='#product-region'" type="button" {{ block.shopify_attributes }} >
+            <button class="cta cta--colour-blue"  onclick="location.href='#product-region'" type="button" style="background-color: {{ block.settings.cta_bg_color }}; color: {{ block.settings.cta_font_color }};">
               {{ block.settings.cta_text }}
             </button>
         {% endcase %}
@@ -64,10 +64,22 @@
             "default": "Lorem ipsum dolor sit"
           },
           {
+            "type": "color",
+            "id": "heading_font_color",
+            "label": "Heading Font colour",
+            "default": "#000000"
+          },
+          {
             "type": "text",
             "id": "image_text_text",
             "label": "Text for image and heading",
             "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus aliquam sapien sit amet nibh vestibulum, vel dictum eros imperdiet. Curabitur convallis urna eu."
+          },
+          {
+            "type": "color",
+            "id": "text_font_color",
+            "label": "Text Font colour",
+            "default": "#000000"
           },
           {
             "type": "text",
@@ -79,13 +91,13 @@
             "type": "color",
             "id": "cta_bg_color",
             "label": "CTA background colour",
-            "default": "#ffffff"
+            "default": "#7AE3F4"
           },
           {
             "type": "color",
             "id": "cta_font_color",
             "label": "CTA Font colour",
-            "default": "#ff0051"
+            "default": "#ffffff"
           }
         ]
       }
