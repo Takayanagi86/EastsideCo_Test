@@ -15,13 +15,19 @@
         </div>
       {% endfor %}
     </div>
-    <div class="autoplay">
-      {% for product in products_by_created %}
-            <img class="product-image product-image-one" src="{{ product.featured_image | img_url: '1500x' }}" loading="lazy">     
-      {% endfor %}
-    </div>
+
+<div style="display: none;" class="slider-type "></div>
+
+<div class="autoplay  ">
+{% for product in products_by_created %}
+  <div>
+	<img src="{{ product.featured_image | img_url: '1500x' }}" >
+  </div>
+{% endfor %}
 </div>
-   
+  
+</div>
+<script src="{{ 'init.js' | asset_url }}" defer="defer"></script>
   {% schema %}
     {
       "name": "Product Region",
@@ -46,13 +52,5 @@
   {% endstylesheet %}
   
   {% javascript %}
-    $(document).ready(function(){
-      $('.autoplay').slick({
-        infinite: true,
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 2000, 
-      });
-  	});
+ 
   {% endjavascript %}
