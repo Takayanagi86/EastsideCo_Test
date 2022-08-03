@@ -85,7 +85,7 @@
       {% endfor %}     
       </div>
       <div class="hero-heading-container  title--alignment-{{ section.settings.title_alignment }}">
-        <h1 class="heading heading--colour-white layout--color-{{ section.settings.top_layout_color }}">Lorem ipsum dolor sit</h1>
+        <h1 class="heading heading--colour-white" style="color: {{ section.settings.title_color }}">Lorem ipsum dolor sit</h1>
       </div>
     </div>
     <div class="hero-right-container" style="background-color: {{ section.settings.image_container_color }};">
@@ -227,6 +227,12 @@
         ],
         "default": "left",
         "label": "Title Alignment"
+        },
+        {
+          "type": "color",
+          "id": "title_color",
+          "label": "Title colour",
+          "default": "#ffffff"
         },
         {
           "id": "button-checkbox",
