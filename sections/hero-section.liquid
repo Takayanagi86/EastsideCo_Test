@@ -155,7 +155,7 @@
         {%- case block.type -%}
           {%- when 'cta' -%}
             <button class="cta cta--colour-white title--alignment-{{ section.settings.title_alignment }}" onclick="location.href='#product-region'" type="button" style="background-color: {{ block.settings.cta_bg_color }}; color: {{ block.settings.cta_font_color }};">
-              Discover the New Collection
+              {{ block.settings.cta_text }}
             </button>   
         {% endcase %}
       {% endfor %}  
@@ -309,6 +309,12 @@
         "name": "Call to Action Button",
         "limit": 1,
         "settings":[
+          {
+            "type": "text",
+            "id": "cta_text",
+            "label": "CTA Text",
+            "default": "Discover the new collection"
+          },
           {
             "type": "color",
             "id": "cta_bg_color",
