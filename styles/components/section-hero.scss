@@ -113,6 +113,10 @@
     mix-blend-mode: lighten;
     opacity: 100%;
   }
+  .cta--colour-white {
+    top: 838px;
+    right: 163px;
+  }
   .title--alignment-right {
     left: 115px;
   }
@@ -139,16 +143,6 @@
       padding-left: 212px;
     }
   }
-}
-
-.layout--color-light {
-  fill: #FFFFFF;
-  color: #FFFFFF;
-}
-
-.layout--color-dark {
-  fill: #000;
-  color: #000;
 }
 
 .content--alignment-right {

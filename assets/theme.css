@@ -459,7 +459,6 @@ h3 {
 
 .heading--colour-white {
   margin: 0;
-  color: rgb(255, 255, 255);
   font-size: 106px;
   letter-spacing: -2px;
 }
@@ -479,7 +478,6 @@ h3 {
 .paragraph--state-bold {
   width: 538px;
   height: 152px;
-  color: rgb(0, 0, 0);
   font-weight: 900;
   letter-spacing: -0.96px;
   line-height: 38px;
@@ -509,17 +507,6 @@ h3 {
 }
 .cta:hover {
   cursor: pointer;
-}
-
-.cta--colour-white {
-  top: 838px;
-  right: 163px;
-  color: rgb(255, 0, 0);
-}
-
-.cta--colour-blue {
-  color: rgb(255, 255, 255);
-  background: rgb(122, 227, 244);
 }
 
 .container--state-main {
@@ -729,6 +716,10 @@ h3 {
   mix-blend-mode: lighten;
   opacity: 100%;
 }
+.hero-right-container .cta--colour-white {
+  top: 838px;
+  right: 163px;
+}
 .hero-right-container .title--alignment-right {
   left: 115px;
 }
@@ -754,16 +745,6 @@ h3 {
 }
 .hero-bottom-container .paragraph--state-bold.bot--alignment-right {
   padding-left: 212px;
-}
-
-.layout--color-light {
-  fill: #FFFFFF;
-  color: #FFFFFF;
-}
-
-.layout--color-dark {
-  fill: #000;
-  color: #000;
 }
 
 .content--alignment-right {
@@ -805,4 +786,9 @@ h3 {
 }
 .it-container .right-container p {
   margin-bottom: 70px;
+}
+
+.cta--colour-blue {
+  color: rgb(255, 255, 255);
+  background: rgb(122, 227, 244);
 }
