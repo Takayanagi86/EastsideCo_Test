@@ -150,7 +150,6 @@
         {% endcase %}
       {% endfor %}
       <img class="hero-second-image" src="{{ section.settings.heroSecondImage | img_url: '1500x' }}">
-
       {% for block in section.blocks %}
         {%- case block.type -%}
           {%- when 'cta' -%}
@@ -161,12 +160,18 @@
       {% endfor %}  
     </div>
   </div>
-  <div class="hero-bottom-container">
-    <img class="hero-third-image" src="{{ section.settings.heroThirdImage | img_url: '1500x' }}">  
-    <p class="paragraph paragraph--state-bold">
-    	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus aliquam sapien sit amet nibh vestibulum, vel dictum eros imperdiet. Curabitur convallis urna eu.
-    </p>
-  </div>
+  {% for block in section.blocks %}
+    {%- case block.type -%}
+      {%- when 'bottom' -%}
+        <div class="hero-bottom-container">
+          <img class="hero-third-image bot--alignment-{{ block.settings.image_alignment }}" src="{{ section.settings.heroThirdImage | img_url: '1500x' }}">  
+          <p class="paragraph paragraph--state-bold bot--alignment-{{ block.settings.image_alignment }}">
+          	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus aliquam sapien sit amet nibh vestibulum, vel dictum eros imperdiet. Curabitur convallis urna eu.
+          </p>
+        </div>
+    {% endcase %}
+  {% endfor %}
+  
 </div>
 
 {% schema %}
@@ -320,6 +325,35 @@
             "id": "cta_font_color",
             "label": "CTA Font colour",
             "default": "#ff0051"
+          }
+        ]
+      },
+      {
+        "type": "bottom",
+        "name": "Alignment and Color",
+        "limit": 1,
+        "settings": [
+          {
+            "type": "select",
+            "id": "image_alignment",
+            "options": [
+              {
+                "value": "left",
+                "label": "left"
+              },
+              {
+                "value": "right",
+                "label": "right"
+              }
+            ],
+            "default": "left",
+            "label": "Image Alignment"
+          },
+          {
+            "type": "color",
+            "id": "bot_font_color",
+            "label": "Font colour",
+            "default": "#000000"
           }
         ]
       }
