@@ -16,7 +16,7 @@
           "type": "navigation",
           "settings": {
             "shop_link": "shopify:\/\/collections\/all",
-            "collections_link": "shopify:\/\/collections",
+            "collection_link": "shopify:\/\/collections\/frontpage",
             "account_link": "shopify:\/\/pages\/contact",
             "navigation_color": "#ffffff"
           }
