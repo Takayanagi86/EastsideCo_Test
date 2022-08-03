@@ -86,61 +86,63 @@
       </div>
     </div>
     <div class="hero-right-container" style="background-color: {{ section.settings.image_container_color }};">
-      <div class="navigation-container ">
-        <div class="shop navigation layout--color-{{ section.settings.top_layout_color }}">Shop</div>
-        <div class="collections navigation layout--color-{{ section.settings.top_layout_color }}">Collections</div>
-        <div class="account navigation layout--color-{{ section.settings.top_layout_color }}">Account</div>
-        <div class="search navigation">
-          <?xml version="1.0" encoding="UTF-8"?>
-          <svg width="26px" height="26px" viewBox="0 0 26 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-              <g id="Developer---Concept-Mockup" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                  <g id="XL---ESC-Frontend-Developer-Task" class="layout--color-{{ section.settings.top_layout_color }}" transform="translate(-1156.000000, -66.000000)" fill-rule="nonzero">
-                      <g id="Hero-section" transform="translate(0.000000, -1.000000)">
-                          <g id="Navigation" transform="translate(683.000000, 66.000000)">
-                              <g id="Search-Icon" transform="translate(473.000000, 1.000000)">
-                                  <path d="M25.6000004,22.0628909 L20.4150394,16.8781253 C21.4736331,15.1839846 22.0865238,13.1839846 22.0865238,11.0433596 C22.0865238,4.95410162 17.1326175,0 11.0433596,0 C4.95410162,0 0,4.95410162 0,11.0433596 C0,17.1326175 4.95410162,22.0867191 11.0433596,22.0867191 C13.1839846,22.0867191 15.1837893,21.4738284 16.87793,20.4152347 L22.0628909,25.6000004 L25.6000004,22.0628909 Z M11.0433596,2.24980473 C15.8919924,2.24980473 19.8369143,6.19453134 19.8369143,11.0433596 C19.8369143,15.8921877 15.8919924,19.8369143 11.0433596,19.8369143 C6.19453134,19.8369143 2.24980473,15.8921877 2.24980473,11.0433596 C2.24980473,6.19453134 6.19453134,2.24980473 11.0433596,2.24980473 Z" id="Shape"></path>
-                              </g>
-                          </g>
-                      </g>
-                  </g>
-              </g>
-          </svg>
+      {% for block in section.blocks %}
+        <div class="navigation-container" {{ block.shopify_attributes }}>
+          <div class="shop navigation" style="color: {{ block.settings.navigation_color }}">Shop</div>
+          <div class="collections navigation" style="color: {{ block.settings.navigation_color }}">Collections</div>
+          <div class="account navigation" style="color: {{ block.settings.navigation_color }}">Account</div>
+          <div class="search navigation">
+            <?xml version="1.0" encoding="UTF-8"?>
+            <svg width="26px" height="26px" viewBox="0 0 26 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g id="Developer---Concept-Mockup" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g id="XL---ESC-Frontend-Developer-Task" transform="translate(-1156.000000, -66.000000)" fill="{{ block.settings.navigation_color }}" fill-rule="nonzero">
+                        <g id="Hero-section" transform="translate(0.000000, -1.000000)">
+                            <g id="Navigation" transform="translate(683.000000, 66.000000)">
+                                <g id="Search-Icon" transform="translate(473.000000, 1.000000)">
+                                    <path d="M25.6000004,22.0628909 L20.4150394,16.8781253 C21.4736331,15.1839846 22.0865238,13.1839846 22.0865238,11.0433596 C22.0865238,4.95410162 17.1326175,0 11.0433596,0 C4.95410162,0 0,4.95410162 0,11.0433596 C0,17.1326175 4.95410162,22.0867191 11.0433596,22.0867191 C13.1839846,22.0867191 15.1837893,21.4738284 16.87793,20.4152347 L22.0628909,25.6000004 L25.6000004,22.0628909 Z M11.0433596,2.24980473 C15.8919924,2.24980473 19.8369143,6.19453134 19.8369143,11.0433596 C19.8369143,15.8921877 15.8919924,19.8369143 11.0433596,19.8369143 C6.19453134,19.8369143 2.24980473,15.8921877 2.24980473,11.0433596 C2.24980473,6.19453134 6.19453134,2.24980473 11.0433596,2.24980473 Z" id="Shape"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </svg>
+          </div>
+          <div class="basket navigation">
+            <?xml version="1.0" encoding="UTF-8"?>
+            <svg width="16px" height="23px" viewBox="0 0 16 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g id="Developer---Concept-Mockup" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g id="XL---ESC-Frontend-Developer-Task" transform="translate(-1256.000000, -65.000000)" fill="{{ block.settings.navigation_color }}" fill-rule="nonzero">
+                        <g id="Hero-section" transform="translate(0.000000, -1.000000)">
+                            <g id="Navigation" transform="translate(683.000000, 66.000000)">
+                                <g id="Basket-Icon" transform="translate(573.000000, 0.000000)">
+                                    <path d="M12.6329817,5.6771557 L12.6329817,4.90171639 C12.6329817,2.19942787 10.5541366,0 8,0 C5.44586341,0 3.36701832,2.19942787 3.36701832,4.90171639 L3.36701832,5.6771557 L0,5.6771557 L0,19.907642 C0,21.6136085 1.31038312,23 2.92282066,23 L13.0771793,23 C14.6896169,23 16,21.6136085 16,19.907642 L16,5.6771557 L12.6329817,5.6771557 Z M4.50860633,9.28647323 C3.96668517,9.28647323 3.52692948,8.82120964 3.52692948,8.24785452 C3.52692948,7.67449939 3.96668517,7.2092358 4.50860633,7.2092358 C5.05052748,7.2092358 5.49028318,7.67449939 5.49028318,8.24785452 C5.49028318,8.82590928 5.05052748,9.28647323 4.50860633,9.28647323 Z M10.4963909,5.6771557 L5.50360911,5.6771557 L5.50360911,4.90171639 C5.50360911,3.4448304 6.62298723,2.26052309 8,2.26052309 C9.37701277,2.26052309 10.4963909,3.4448304 10.4963909,4.90171639 L10.4963909,5.6771557 Z M11.4913937,9.28647323 C10.9494725,9.28647323 10.5097168,8.82120964 10.5097168,8.24785452 C10.5097168,7.67449939 10.9494725,7.2092358 11.4913937,7.2092358 C12.0333148,7.2092358 12.4730705,7.67449939 12.4730705,8.24785452 C12.4686285,8.82590928 12.0333148,9.28647323 11.4913937,9.28647323 Z" id="Shape"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </svg>
+          </div>
+          <div class="menu navigation">
+            <?xml version="1.0" encoding="UTF-8"?>
+            <svg width="35px" height="18px" viewBox="0 0 35 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g id="Developer---Concept-Mockup" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g id="XL---ESC-Frontend-Developer-Task" transform="translate(-1345.000000, -71.000000)" fill="{{ block.settings.navigation_color }}" fill-rule="nonzero">
+                        <g id="Hero-section" transform="translate(0.000000, -1.000000)">
+                            <g id="Navigation" transform="translate(683.000000, 66.000000)">
+                                <g id="Hamburger-Icon" transform="translate(662.000000, 6.000000)">
+                                    <path d="M1.08270004,2.18727009 L33.5645113,2.18727009 C34.1622014,2.18727009 34.6472114,1.70217007 34.6472114,1.10457004 C34.6472114,0.50688002 34.1621114,0.0218700009 33.5645113,0.0218700009 L1.08270004,0.0218700009 C0.485010019,0.0218700009 0,0.50697002 0,1.10457004 C0,1.70217007 0.485100019,2.18727009 1.08270004,2.18727009 Z" id="Path"></path>
+                                    <path d="M33.5645113,7.6009503 L1.08270004,7.6009503 C0.485010019,7.6009503 0,8.08605032 0,8.68365035 C0,9.28125037 0.485100019,9.76635039 1.08270004,9.76635039 L33.5645113,9.76635039 C34.1622014,9.76635039 34.6472114,9.28125037 34.6472114,8.68365035 C34.6472114,8.08605032 34.1622014,7.6009503 33.5645113,7.6009503 Z" id="Path"></path>
+                                    <path d="M33.5645113,15.1800306 L11.9099705,15.1800306 C11.3122804,15.1800306 10.8272704,15.6651306 10.8272704,16.2627306 C10.8272704,16.8604207 11.3123704,17.3454307 11.9099705,17.3454307 L33.5645113,17.3454307 C34.1622014,17.3454307 34.6472114,16.8603307 34.6472114,16.2627306 C34.6472114,15.6650406 34.1622014,15.1800306 33.5645113,15.1800306 Z" id="Path"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </svg>
+          </div>
         </div>
-        <div class="basket navigation">
-          <?xml version="1.0" encoding="UTF-8"?>
-          <svg width="16px" height="23px" viewBox="0 0 16 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-              <g id="Developer---Concept-Mockup" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                  <g id="XL---ESC-Frontend-Developer-Task" class="layout--color-{{ section.settings.top_layout_color }}" transform="translate(-1256.000000, -65.000000)" fill-rule="nonzero">
-                      <g id="Hero-section" transform="translate(0.000000, -1.000000)">
-                          <g id="Navigation" transform="translate(683.000000, 66.000000)">
-                              <g id="Basket-Icon" transform="translate(573.000000, 0.000000)">
-                                  <path d="M12.6329817,5.6771557 L12.6329817,4.90171639 C12.6329817,2.19942787 10.5541366,0 8,0 C5.44586341,0 3.36701832,2.19942787 3.36701832,4.90171639 L3.36701832,5.6771557 L0,5.6771557 L0,19.907642 C0,21.6136085 1.31038312,23 2.92282066,23 L13.0771793,23 C14.6896169,23 16,21.6136085 16,19.907642 L16,5.6771557 L12.6329817,5.6771557 Z M4.50860633,9.28647323 C3.96668517,9.28647323 3.52692948,8.82120964 3.52692948,8.24785452 C3.52692948,7.67449939 3.96668517,7.2092358 4.50860633,7.2092358 C5.05052748,7.2092358 5.49028318,7.67449939 5.49028318,8.24785452 C5.49028318,8.82590928 5.05052748,9.28647323 4.50860633,9.28647323 Z M10.4963909,5.6771557 L5.50360911,5.6771557 L5.50360911,4.90171639 C5.50360911,3.4448304 6.62298723,2.26052309 8,2.26052309 C9.37701277,2.26052309 10.4963909,3.4448304 10.4963909,4.90171639 L10.4963909,5.6771557 Z M11.4913937,9.28647323 C10.9494725,9.28647323 10.5097168,8.82120964 10.5097168,8.24785452 C10.5097168,7.67449939 10.9494725,7.2092358 11.4913937,7.2092358 C12.0333148,7.2092358 12.4730705,7.67449939 12.4730705,8.24785452 C12.4686285,8.82590928 12.0333148,9.28647323 11.4913937,9.28647323 Z" id="Shape"></path>
-                              </g>
-                          </g>
-                      </g>
-                  </g>
-              </g>
-          </svg>
-        </div>
-        <div class="menu navigation">
-          <?xml version="1.0" encoding="UTF-8"?>
-          <svg width="35px" height="18px" viewBox="0 0 35 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-              <g id="Developer---Concept-Mockup" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                  <g id="XL---ESC-Frontend-Developer-Task" class="layout--color-{{ section.settings.top_layout_color }}" transform="translate(-1345.000000, -71.000000)" fill-rule="nonzero">
-                      <g id="Hero-section" transform="translate(0.000000, -1.000000)">
-                          <g id="Navigation" transform="translate(683.000000, 66.000000)">
-                              <g id="Hamburger-Icon" transform="translate(662.000000, 6.000000)">
-                                  <path d="M1.08270004,2.18727009 L33.5645113,2.18727009 C34.1622014,2.18727009 34.6472114,1.70217007 34.6472114,1.10457004 C34.6472114,0.50688002 34.1621114,0.0218700009 33.5645113,0.0218700009 L1.08270004,0.0218700009 C0.485010019,0.0218700009 0,0.50697002 0,1.10457004 C0,1.70217007 0.485100019,2.18727009 1.08270004,2.18727009 Z" id="Path"></path>
-                                  <path d="M33.5645113,7.6009503 L1.08270004,7.6009503 C0.485010019,7.6009503 0,8.08605032 0,8.68365035 C0,9.28125037 0.485100019,9.76635039 1.08270004,9.76635039 L33.5645113,9.76635039 C34.1622014,9.76635039 34.6472114,9.28125037 34.6472114,8.68365035 C34.6472114,8.08605032 34.1622014,7.6009503 33.5645113,7.6009503 Z" id="Path"></path>
-                                  <path d="M33.5645113,15.1800306 L11.9099705,15.1800306 C11.3122804,15.1800306 10.8272704,15.6651306 10.8272704,16.2627306 C10.8272704,16.8604207 11.3123704,17.3454307 11.9099705,17.3454307 L33.5645113,17.3454307 C34.1622014,17.3454307 34.6472114,16.8603307 34.6472114,16.2627306 C34.6472114,15.6650406 34.1622014,15.1800306 33.5645113,15.1800306 Z" id="Path"></path>
-                              </g>
-                          </g>
-                      </g>
-                  </g>
-              </g>
-          </svg>
-        </div>
-      </div>
+      {% endfor %}
       <img class="hero-second-image" src="{{ section.settings.heroSecondImage | img_url: '1500x' }}">
       {% if section.settings.button-checkbox == false %}
         {% if section.settings.top_layout_color == "dark" %}
@@ -254,32 +256,60 @@
     ],
     "blocks":[
        {
-      "type": "social",
-      "name": "Logo and Social Links",
-      "limit": 1,
-      "settings": [
-        {
-          "type": "url",
-          "id": "instagram_link",
-          "label": "Link for Instagram"
-        },
-        {
-          "type": "url",
-          "id": "snapchat_link",
-          "label": "Link for Snapchat"
-        },
-        {
-          "type": "url",
-          "id": "twitter_link",
-          "label": "Link for Twitter"
-        },
-        {
-          "type": "color",
-          "id": "logo_social_color",
-          "label": "Logo and Social links colour",
-          "default": "#ffffff"
-        }
-      ]
+        "type": "social",
+        "name": "Logo and Social Links",
+        "limit": 1,
+        "settings": [
+          {
+            "type": "url",
+            "id": "instagram_link",
+            "label": "Link for Instagram"
+          },
+          {
+            "type": "url",
+            "id": "snapchat_link",
+            "label": "Link for Snapchat"
+          },
+          {
+            "type": "url",
+            "id": "twitter_link",
+            "label": "Link for Twitter"
+          },
+          {
+            "type": "color",
+            "id": "logo_social_color",
+            "label": "Logo and Social links colour",
+            "default": "#ffffff"
+          }
+        ]
+      },
+      {
+        "type": "navigation",
+        "name": "Navigation and Menu Links",
+        "limit": 1,
+        "settings": [
+          {
+            "type": "url",
+            "id": "shop_link",
+            "label": "Link for Shop page"
+          },
+          {
+            "type": "url",
+            "id": "collections_link",
+            "label": "Link for Collections page"
+          },
+          {
+            "type": "url",
+            "id": "account_link",
+            "label": "Link for Account page"
+          },
+          {
+            "type": "color",
+            "id": "navigation_color",
+            "label": "Logo and Social links colour",
+            "default": "#ffffff"
+          }
+        ]
       }
     ],
 	"presets": [
