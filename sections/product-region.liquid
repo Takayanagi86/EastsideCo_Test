@@ -10,7 +10,7 @@
                 <h4>{{ product.title }}</h4>
                 <p class="paragraph paragraph--state-product">{{ product.description }}</p>
             </div>
-            <button class="button">Add to Bag<span class="line"></span>£{{ product.price | money }}</button>
+            <button class="button">Add to Bag<span class="line"></span>{{ product.price | money }}</button>
         </li>
       {% endfor %}
          </ul>
