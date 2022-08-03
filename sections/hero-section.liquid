@@ -166,7 +166,7 @@
         <div class="hero-bottom-container" {{ block.shopify_attributes }}>
           <img class="hero-third-image bot--alignment-{{ block.settings.image_alignment }}" src="{{ section.settings.heroThirdImage | img_url: '1500x' }}">  
           <p class="paragraph paragraph--state-bold bot--alignment-{{ block.settings.image_alignment }}">
-          	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus aliquam sapien sit amet nibh vestibulum, vel dictum eros imperdiet. Curabitur convallis urna eu.
+          	{{ block.settings.bot_text }}
           </p>
         </div>
     {% endcase %}
@@ -348,6 +348,12 @@
             ],
             "default": "left",
             "label": "Image Alignment"
+          },
+          {
+            "type": "text",
+            "id": "bot_text",
+            "label": "Bottom Text",
+            "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus aliquam sapien sit amet nibh vestibulum, vel dictum eros imperdiet. Curabitur convallis urna eu."
           },
           {
             "type": "color",
