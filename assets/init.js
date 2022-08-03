@@ -7,6 +7,7 @@ $(document).ready(function(){
     dots: false,
     infinite: true,
     arrows: false,
+    draggable: true,
   });
 });
 
