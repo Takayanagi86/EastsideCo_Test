@@ -24,6 +24,16 @@
                 </g>
             </g>
         </svg>
+
+        {% for block in section.blocks %}
+  {% case block.type %}
+    {% when 'social' %}
+      <div class="social" {{ block.shopify_attributes }}>
+        {{ block.settings.instagram_link }}
+      </div>
+    ...
+  {% endcase %}
+{% endfor %}
         <div class="social-container" {{ block.shopify_attributes }}>
           <div class="social social--state-menu">
             <a class="instagram" href="{{ block.settings.instagram_link }} {{ section.settings.instagram_link }}">
@@ -274,7 +284,7 @@
     "blocks":[
        {
       "type": "social",
-      "name": "social links",
+      "name": "Social Links",
       "limit": 1,
       "settings": [
         {
