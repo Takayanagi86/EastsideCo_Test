@@ -518,12 +518,13 @@ h3 {
   position: relative;
   height: 556px;
   width: 320px;
-  margin-right: 23px;
+  margin-left: 21px;
 }
 .card .rectangle {
   position: absolute;
-  top: -8px;
-  left: -8px;
+  z-index: 1;
+  top: 0;
+  left: 0;
   width: 312px;
   height: 412px;
   border: 1px solid rgb(255, 0, 0);
@@ -531,13 +532,15 @@ h3 {
 }
 .card .product-image {
   position: absolute;
-  z-index: 1;
+  z-index: 2;
+  top: 8px;
+  left: 8px;
   height: 416px;
   width: 312px;
 }
 .card .card-bottom {
   position: absolute;
-  bottom: 70px;
+  bottom: 60px;
 }
 .card .card-bottom h4 {
   width: 312px;
@@ -767,6 +770,10 @@ h3 {
 .product-cards-container {
   display: flex;
   margin-top: 46px;
+}
+
+.slick-track {
+  left: -10px;
 }
 
 .it-container {

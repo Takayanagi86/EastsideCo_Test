@@ -99,11 +99,12 @@ letter-spacing: -0.68px;
   position: relative;
   height: 556px;
   width: 320px;
-  margin-right: 23px;
+  margin-left: 21px;
   .rectangle {
       position: absolute;
-      top: -8px;
-      left: -8px;
+      z-index: 1;
+      top: 0;
+      left: 0;
       width: 312px;
       height: 412px;
       border: 1px solid rgb(255, 0, 0);
@@ -111,13 +112,15 @@ letter-spacing: -0.68px;
   }
   .product-image {
       position: absolute;
-      z-index:1;
+      z-index:2;
+      top: 8px;
+      left: 8px;
       height: 416px;
       width: 312px;
   }
   .card-bottom {
       position: absolute;
-      bottom: 70px;
+      bottom: 60px;
       h4 {
           width: 312px;
           color: rgb(0, 0, 0);
