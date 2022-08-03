@@ -4,13 +4,13 @@
       {% for block in section.blocks %}
         {%- case block.type -%}
           {%- when 'heading' -%}
-          <h2 class="heading heading--colour-black">{{ block.settings.image_text_heading }}</h2>
+          <h2 class="heading heading--colour-black" {{ block.shopify_attributes }}>{{ block.settings.image_text_heading }}</h2>
           {%- when 'text' -%}
-          <p class="paragraph paragraph--state-bold">
+          <p class="paragraph paragraph--state-bold" {{ block.shopify_attributes }} >
               {{ block.settings.image_text_text }}
           </p>
           {%- when 'cta' -%}
-            <button class="cta cta--colour-blue"  onclick="location.href='#product-region'" type="button">
+            <button class="cta cta--colour-blue"  onclick="location.href='#product-region'" type="button" {{ block.shopify_attributes }} >
               {{ block.settings.cta_text }}
             </button>
         {% endcase %}
