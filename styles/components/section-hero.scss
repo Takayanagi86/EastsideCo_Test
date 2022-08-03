@@ -128,9 +128,16 @@
     width: 386px;
     left: 212px;
     bottom: 0;
+    &.bot--alignment-right {
+      left: unset;
+      right: 172px;
+    }
   }
   .paragraph--state-bold {
     padding: 171px 0 0 730px;
+    &.bot--alignment-right {
+      padding-left: 212px;
+    }
   }
 }
 

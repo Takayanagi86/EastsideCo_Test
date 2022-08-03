@@ -745,8 +745,15 @@ h3 {
   left: 212px;
   bottom: 0;
 }
+.hero-bottom-container .hero-third-image.bot--alignment-right {
+  left: unset;
+  right: 172px;
+}
 .hero-bottom-container .paragraph--state-bold {
   padding: 171px 0 0 730px;
+}
+.hero-bottom-container .paragraph--state-bold.bot--alignment-right {
+  padding-left: 212px;
 }
 
 .layout--color-light {
