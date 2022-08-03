@@ -3,17 +3,12 @@
     
       {% for block in section.blocks %}
         {%- case block.type -%}
-          {%- when 'heading2' -%}
+          {%- when 'right' -%}
           <div class="right-container"{{ block.shopify_attributes }}>
           <h2 class="heading heading--colour-black" >{{ block.settings.image_text_heading }}</h2>
           <p class="paragraph paragraph--state-bold">
               {{ block.settings.image_text_text }}
           </p>
-        {% endcase %}
-      {% endfor %} 
-      {% for block in section.blocks %}
-        {%- case block.type -%}
-          {%- when 'cta' -%}
             <button class="cta cta--colour-blue"  onclick="location.href='#product-region'" type="button" {{ block.shopify_attributes }} >
               {{ block.settings.cta_text }}
             </button>
@@ -58,8 +53,8 @@
       ],
       "blocks":[
       {
-        "type": "heading2",
-        "name": "Heading and Text",
+        "type": "right",
+        "name": "Heading, Text and CTA",
         "limit": 1,
         "settings":[
           {
@@ -73,14 +68,7 @@
             "id": "image_text_text",
             "label": "Text for image and heading",
             "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus aliquam sapien sit amet nibh vestibulum, vel dictum eros imperdiet. Curabitur convallis urna eu."
-          }
-        ]
-      },
-      {
-        "type": "cta",
-        "name": "Call to Action Button",
-        "limit": 1,
-        "settings":[
+          },
           {
             "type": "text",
             "id": "cta_text",
