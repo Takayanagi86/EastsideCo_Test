@@ -150,6 +150,17 @@
         {% endcase %}
       {% endfor %}
       <img class="hero-second-image" src="{{ section.settings.heroSecondImage | img_url: '1500x' }}">
+
+      {% for block in section.blocks %}
+        {%- case block.type -%}
+          {%- when 'cta' -%}
+            <button class="cta cta--colour-white title--alignment-{{ section.settings.title_alignment }}" onclick="location.href='#product-region'" type="button" style="background-color: {{ section.settings.image_container_color }}; color: #FFFFFF;">
+              Discover the New Collection
+            </button>   
+        {% endcase %}
+      {% endfor %}
+
+      
       {% if section.settings.button-checkbox == false %}
         {% if section.settings.top_layout_color == "dark" %}
           <button class="cta cta--colour-white title--alignment-{{ section.settings.title_alignment }}" onclick="location.href='#product-region'" type="button" style="background-color: {{ section.settings.image_container_color }}; color: #FFFFFF;">
@@ -304,6 +315,25 @@
             "id": "navigation_color",
             "label": "Logo and Social links colour",
             "default": "#ffffff"
+          }
+        ]
+      },
+      {
+        "type": "cta",
+        "name": "Call to Action Button",
+        "limit": 1,
+        "settings":[
+          {
+            "type": "color",
+            "id": "cta_bg_color",
+            "label": "CTA background colour",
+            "default": "#ffffff"
+          },
+          {
+            "type": "color",
+            "id": "cta_font_color",
+            "label": "CTA Font colour",
+            "default": "#ff0051"
           }
         ]
       }
