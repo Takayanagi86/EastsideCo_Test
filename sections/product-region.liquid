@@ -1,7 +1,7 @@
 <div id="product-region" class="product-region container--state-main">
     <h3>Lorem ipsum dolor sit</h3>
     <p class="paragraph paragraph--state-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus aliquam sapien sit amet nibh vestibulum, vel dictum eros imperdiet.</p>
-    <div class="product-cards-container autoplay">
+    <div class="product-cards-container fade">
       {% assign products_by_created = section.settings.collection.products | sort: "created_at" %}
       {% for product in products_by_created %}
         <div class="card card--state-one">
@@ -41,5 +41,12 @@
   {% endstylesheet %}
   
   {% javascript %}
-
+    $(document).ready(function(){
+      $('.fade').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000, 
+      });
+  	});
   {% endjavascript %}
