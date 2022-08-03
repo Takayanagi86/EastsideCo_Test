@@ -4,9 +4,8 @@
     <div class="hero-left-container">
       <img class="hero-first-image" src="{{ section.settings.heroFirstImage | img_url: '1500x' }}">
       {% for block in section.blocks %}
-        
-          <div class="logo-social-container" {{ block.shopify_attributes }}>
-        <svg width="31px" height="273px" viewBox="0 0 31 273" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <div class="logo-social-container" {{ block.shopify_attributes }}>
+          <svg width="31px" height="273px" viewBox="0 0 31 273" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <g id="Developer---Concept-Mockup" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                 <g id="XL---ESC-Frontend-Developer-Task" class="layout--color-{{ section.settings.top_layout_color }}" transform="translate(-75.000000, -61.000000)" fill-rule="nonzero">
                     <g id="Hero-section" transform="translate(0.000000, -1.000000)">
@@ -26,11 +25,11 @@
                 </g>
             </g>
         </svg>
-        <div class="social-container" >
-          <div class="social social--state-menu">
-            <a class="instagram" href="{{ block.settings.instagram_link }} {{ section.settings.instagram_link }}">
-              <?xml version="1.0" encoding="UTF-8"?>
-              <svg width="20px" height="19px" viewBox="0 0 20 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <div class="social-container" >
+            <div class="social social--state-menu">
+              <a class="instagram" href="{{ block.settings.instagram_link }} {{ section.settings.instagram_link }}">
+                <?xml version="1.0" encoding="UTF-8"?>
+                <svg width="20px" height="19px" viewBox="0 0 20 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                   <g id="Developer---Concept-Mockup" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                       <g id="XL---ESC-Frontend-Developer-Task" class="layout--color-{{ section.settings.top_layout_color }}" transform="translate(-77.000000, -374.000000)"  fill-rule="nonzero">
                           <g id="Hero-section" transform="translate(0.000000, -1.000000)">
@@ -45,12 +44,12 @@
                       </g>
                   </g>
               </svg>
-            </a>
-          </div>
-          <div class="social social--state-menu">
-            <a class="snapchat" href="{{ block.settings.snapchat_link }} {{ section.settings.snapchat_link }}">
-              <?xml version="1.0" encoding="UTF-8"?>
-              <svg width="22px" height="19px" viewBox="0 0 22 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              </a>
+            </div>
+            <div class="social social--state-menu">
+              <a class="snapchat" href="{{ block.settings.snapchat_link }} {{ section.settings.snapchat_link }}">
+                <?xml version="1.0" encoding="UTF-8"?>
+                <svg width="22px" height="19px" viewBox="0 0 22 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                   <g id="Developer---Concept-Mockup" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                       <g id="XL---ESC-Frontend-Developer-Task" class="layout--color-{{ section.settings.top_layout_color }}" transform="translate(-75.000000, -414.000000)" fill-rule="nonzero">
                           <g id="Hero-section" transform="translate(0.000000, -1.000000)">
@@ -61,12 +60,12 @@
                       </g>
                   </g>
               </svg>
-            </a>
-          </div>
-          <div class="social social--state-menu">
-            <a class="twitter" href="{{ block.settings.twitter_link }} {{ section.settings.twitter_link }}">
-              <?xml version="1.0" encoding="UTF-8"?>
-              <svg width="24px" height="19px" viewBox="0 0 24 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              </a>
+            </div>
+            <div class="social social--state-menu">
+              <a class="twitter" href="{{ block.settings.twitter_link }} {{ section.settings.twitter_link }}">
+                <?xml version="1.0" encoding="UTF-8"?>
+                <svg width="24px" height="19px" viewBox="0 0 24 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                   <g id="Developer---Concept-Mockup" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                       <g id="XL---ESC-Frontend-Developer-Task" class="layout--color-{{ section.settings.top_layout_color }}" transform="translate(-75.000000, -454.000000)" fill-rule="nonzero">
                           <g id="Hero-section" transform="translate(0.000000, -1.000000)">
@@ -77,10 +76,10 @@
                       </g>
                   </g>
               </svg>
-            </a>
+              </a>
+            </div>
           </div>
-        </div> 
-       
+        </div>
       {% endfor %}
       
       </div>
