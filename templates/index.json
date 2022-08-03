@@ -33,6 +33,7 @@
           "type": "bottom",
           "settings": {
             "image_alignment": "left",
+            "bot_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus aliquam sapien sit amet nibh vestibulum, vel dictum eros imperdiet. Curabitur convallis urna eu.",
             "bot_font_color": "#000000"
           }
         }
