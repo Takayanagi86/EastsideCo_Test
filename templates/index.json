@@ -32,7 +32,7 @@
         "161001a3-9c59-4394-bfd4-e6cd3443ae7d": {
           "type": "bottom",
           "settings": {
-            "image_alignment": "right",
+            "image_alignment": "left",
             "bot_font_color": "#000000"
           }
         }
