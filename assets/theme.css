@@ -518,6 +518,7 @@ h3 {
   position: relative;
   height: 556px;
   width: 320px;
+  min-width: 311px;
   margin-left: 21px;
 }
 .card .rectangle {
