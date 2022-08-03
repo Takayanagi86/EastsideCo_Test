@@ -1,13 +1,20 @@
-<div class="it-container container--state-main">
+<div class="it-container container--state-main image-text--alignment-{{ section.settings.image_alignment }}" style="background-color: {{ section.settings.image_text_bg_colour }}">
     <img class="image-text " src="{{ section.settings.imageText | img_url: '1500x' }}" loading="lazy">
     <div class="right-container">
-        <h2 class="heading heading--colour-black">Lorem ipsum dolor sit</h2>
-        <p class="paragraph paragraph--state-bold">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus aliquam sapien sit amet nibh vestibulum, vel dictum eros imperdiet. Curabitur convallis urna eu.
-        </p>
-        <button class="cta cta--colour-blue"  onclick="location.href='#product-region'" type="button">
-            Discover the New Collection
-        </button>
+      {% for block in section.blocks %}
+        {%- case block.type -%}
+          <h2 class="heading heading--colour-black">Lorem ipsum dolor sit</h2>
+          <p class="paragraph paragraph--state-bold">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus aliquam sapien sit amet nibh vestibulum, vel dictum eros imperdiet. Curabitur convallis urna eu.
+          </p>
+          {%- when 'cta' -%}
+            <button class="cta cta--colour-blue"  onclick="location.href='#product-region'" type="button">
+              {{ block.settings.cta_text }}
+            </button>
+        {% endcase %}
+      {% endfor %} 
+      
+        
     </div>
 </div>
    
@@ -19,8 +26,57 @@
         "type": "image_picker",
         "id": "imageText",
         "label": "image to go with text"
+      },
+      {
+        "type": "select",
+        "id": "image_alignment",
+        "options": [
+          {
+            "value": "left",
+            "label": "left"
+          },
+          {
+            "value": "right",
+            "label": "right"
+          }
+        ],
+        "default": "left",
+        "label": "Image Alignment"
+      },
+      {
+        "type": "color",
+        "id": "image_text_bg_colour",
+        "label": "The background colour",
+        "default": "#ffffff"
       }
       ],
+      "blocks":[
+      {
+        "type": "cta",
+        "name": "Call to Action Button",
+        "limit": 1,
+        "settings":[
+          {
+            "type": "text",
+            "id": "cta_text",
+            "label": "CTA Text",
+            "default": "Discover the new collection"
+          },
+          {
+            "type": "color",
+            "id": "cta_bg_color",
+            "label": "CTA background colour",
+            "default": "#ffffff"
+          },
+          {
+            "type": "color",
+            "id": "cta_font_color",
+            "label": "CTA Font colour",
+            "default": "#ff0051"
+          }
+        ]
+      }
+    ],
       "presets": [
           {
               "name": "Image and Text",
