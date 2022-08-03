@@ -6,7 +6,7 @@ $(document).ready(function(){
     autoplaySpeed: 2000,
     dots: false,
     infinite: true,
-    arrows, false,
+    arrows: false,
   });
 });
 
