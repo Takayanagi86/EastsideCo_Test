@@ -20,19 +20,27 @@
             "account_link": "shopify:\/\/pages\/contact",
             "navigation_color": "#ffffff"
           }
+        },
+        "6a10934c-d7fa-40b8-9627-62bfe723195d": {
+          "type": "cta",
+          "settings": {
+            "cta_bg_color": "#ffffff",
+            "cta_font_color": "#ff0051"
+          }
         }
       },
       "block_order": [
         "1abe1020-92e5-4998-a597-9c987f023e4f",
-        "4282f382-0209-43c9-9b06-f4a96c8b99f3"
+        "4282f382-0209-43c9-9b06-f4a96c8b99f3",
+        "6a10934c-d7fa-40b8-9627-62bfe723195d"
       ],
       "settings": {
         "heroFirstImage": "shopify:\/\/shop_images\/Large_Image.jpg",
         "heroSecondImage": "shopify:\/\/shop_images\/2nd_Image.png",
         "main_image_alignment": "left",
         "image_container_color": "#ff0051",
-        "top_layout_color": "light",
         "title_alignment": "left",
+        "title_color": "#ffffff",
         "button-checkbox": false,
         "heroThirdImage": "shopify:\/\/shop_images\/shutterstock_403512199.jpg"
       }
