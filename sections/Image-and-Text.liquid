@@ -5,10 +5,13 @@
         {%- case block.type -%}
           {%- when 'heading' -%}
           <h2 class="heading heading--colour-black" {{ block.shopify_attributes }}>{{ block.settings.image_text_heading }}</h2>
-          {%- when 'text' -%}
-          <p class="paragraph paragraph--state-bold" {{ block.shopify_attributes }} >
+          <p class="paragraph paragraph--state-bold">
               {{ block.settings.image_text_text }}
           </p>
+        {% endcase %}
+      {% endfor %} 
+      {% for block in section.blocks %}
+        {%- case block.type -%}
           {%- when 'cta' -%}
             <button class="cta cta--colour-blue"  onclick="location.href='#product-region'" type="button" {{ block.shopify_attributes }} >
               {{ block.settings.cta_text }}
@@ -55,7 +58,7 @@
       "blocks":[
       {
         "type": "heading",
-        "name": "Heading",
+        "name": "Heading and Text",
         "limit": 1,
         "settings":[
           {
@@ -63,14 +66,7 @@
             "id": "image_text_heading",
             "label": "Heading for image and text",
             "default": "Lorem ipsum dolor sit"
-          }
-        ]
-      },
-        {
-        "type": "text",
-        "name": "Text",
-        "limit": 1,
-        "settings":[
+          },
           {
             "type": "text",
             "id": "image_text_text",
