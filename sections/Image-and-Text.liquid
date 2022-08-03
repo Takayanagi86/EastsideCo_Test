@@ -4,12 +4,12 @@
       {% for block in section.blocks %}
         {%- case block.type -%}
           {%- when 'heading' -%}
-          <h2 class="heading heading--colour-black">Lorem ipsum dolor sit</h2>
+          <h2 class="heading heading--colour-black">{{ block.settings.image_text_heading }}</h2>
           {%- when 'text' -%}
           <p class="paragraph paragraph--state-bold">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus aliquam sapien sit amet nibh vestibulum, vel dictum eros imperdiet. Curabitur convallis urna eu.
+              {{ block.settings.image_text_text }}
           </p>
-          {%- when 'ctaa' -%}
+          {%- when 'cta' -%}
             <button class="cta cta--colour-blue"  onclick="location.href='#product-region'" type="button">
               {{ block.settings.cta_text }}
             </button>
@@ -54,7 +54,33 @@
       ],
       "blocks":[
       {
-        "type": "ctaa",
+        "type": "heading",
+        "name": "Heading",
+        "limit": 1,
+        "settings":[
+          {
+            "type": "text",
+            "id": "image_text_heading",
+            "label": "Heading for image and text",
+            "default": "Lorem ipsum dolor sit"
+          }
+        ]
+      },
+        {
+        "type": "text",
+        "name": "Text",
+        "limit": 1,
+        "settings":[
+          {
+            "type": "text",
+            "id": "image_text_text",
+            "label": "Text for image and heading",
+            "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus aliquam sapien sit amet nibh vestibulum, vel dictum eros imperdiet. Curabitur convallis urna eu."
+          }
+        ]
+      },
+      {
+        "type": "cta",
         "name": "Call to Action Button",
         "limit": 1,
         "settings":[
