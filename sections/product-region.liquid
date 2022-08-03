@@ -14,18 +14,7 @@
             <button class="button">Add to Bag<span class="line"></span>{{ product.price | money }}</button>
         </div>
       {% endfor %}
-    </div>
-
-<div style="display: none;" class="slider-type "></div>
-
-<div class="autoplay  ">
-{% for product in products_by_created %}
-  <div>
-	<img src="{{ product.featured_image | img_url: '1500x' }}" >
-  </div>
-{% endfor %}
-</div>
-  
+    </div>  
 </div>
 <script src="{{ 'init.js' | asset_url }}" defer="defer"></script>
   {% schema %}
