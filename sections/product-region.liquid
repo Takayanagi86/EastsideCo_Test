@@ -1,5 +1,6 @@
+{% assign products_by_created = section.settings.collection.products | sort: "created_at" %}
 <ul>
-{% for image in product.images %}
+{% for image in products_by_created.images %}
   <li>
     <img src="{{ image.src | img_url: '110x110' }}">
   </li>
@@ -10,7 +11,7 @@
     <h3 style="color: {{ section.settings.product_font_color }}">{{ section.settings.product_heading }}</h3>
     <p class="paragraph paragraph--state-light" style="color: {{ section.settings.product_font_color }}">{{ section.settings.product_statement }}</p>
     <div class="product-cards-container autoplay">
-      {% assign products_by_created = section.settings.collection.products | sort: "created_at" %}
+      
       {% for product in products_by_created %}
         <div class="card">
             <span class="rectangle" style="border-color: {{ section.settings.rectangle_color }}"></span>
