@@ -1,3 +1,11 @@
+<ul>
+{% for image in product.images %}
+  <li>
+    <img src="{{ image.src | img_url: '110x110' }}">
+  </li>
+  {% endfor %}
+</ul>
+
 <div id="product-region" class="product-region container--state-main">
     <h3 style="color: {{ section.settings.product_font_color }}">{{ section.settings.product_heading }}</h3>
     <p class="paragraph paragraph--state-light" style="color: {{ section.settings.product_font_color }}">{{ section.settings.product_statement }}</p>
