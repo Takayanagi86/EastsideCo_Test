@@ -1,14 +1,12 @@
-<script>{% assign images = product.media | where: "alt", "primary-image" %}</script>
 <div id="product-region" class="product-region container--state-main">
     <h3 style="color: {{ section.settings.product_font_color }}">{{ section.settings.product_heading }}</h3>
     <p class="paragraph paragraph--state-light" style="color: {{ section.settings.product_font_color }}">{{ section.settings.product_statement }}</p>
     <div class="product-cards-container autoplay">
       {% assign products_by_created = section.settings.collection.products | sort: "created_at" %}
       {% for product in products_by_created %}
-        
         <div class="card">
             <span class="rectangle" style="border-color: {{ section.settings.rectangle_color }}"></span>
-            <img class="product-image" src="{{ images[1] | img_tag  | img_url: '1500x' }}" loading="lazy">
+            <img class="product-image" src="{{ product.variantImage | img_url: '1500x' }}" loading="lazy">
             <div class="card-bottom">
                 <h4>{{ product.title }}</h4>
                 <p class="paragraph paragraph--state-product">{{ product.description }}</p>
