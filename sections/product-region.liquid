@@ -6,7 +6,7 @@
       {% for product in products_by_created %}
         <div class="card">
             <span class="rectangle" style="border-color: {{ section.settings.rectangle_color }}"></span>
-            <img class="product-image" src="{{ product.variantImage | img_url: '1500x' }}" loading="lazy">
+            <img class="product-image" src="{{ product.featured_image | img_url: '1500x' }}" loading="lazy">
             <div class="card-bottom">
                 <h4>{{ product.title }}</h4>
                 <p class="paragraph paragraph--state-product">{{ product.description }}</p>
